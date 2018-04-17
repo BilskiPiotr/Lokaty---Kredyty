@@ -13,7 +13,7 @@ namespace Lokaty_Kredyty
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PB_Lokaty());
+            Application.Run(new Lokaty());
         }
     }
 }

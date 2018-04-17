@@ -1,6 +1,6 @@
 ﻿namespace Lokaty_Kredyty
 {
-    partial class PB_Lokaty
+    partial class Lokaty
     {
         /// <summary>
         /// Required designer variable.
@@ -32,10 +32,10 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.PB_MenuLokaty = new System.Windows.Forms.MenuStrip();
-            this.PB_LokatyFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuLokaty = new System.Windows.Forms.MenuStrip();
+            this.LokatyFile = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PB_LokatyZTW = new System.Windows.Forms.ToolStripMenuItem();
+            this.LokatyZTW = new System.Windows.Forms.ToolStripMenuItem();
             this.lineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bubbleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,66 +43,66 @@
             this.radarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rangeBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stepLineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PB_InfoNL = new System.Windows.Forms.Label();
-            this.PB_InfoKwota = new System.Windows.Forms.Label();
-            this.PB_KwotaLokaty = new System.Windows.Forms.TextBox();
-            this.PB_InfoOprocentowanie = new System.Windows.Forms.Label();
-            this.PB_Oprocentowanie = new System.Windows.Forms.ComboBox();
-            this.PB_InfoOkres = new System.Windows.Forms.Label();
-            this.PB_CzasNaliczaniaLokaty = new System.Windows.Forms.TextBox();
-            this._PB_WybierzKolorLiniiWykresu = new System.Windows.Forms.Button();
-            this.PB_InfoKolorLinii = new System.Windows.Forms.Label();
-            this.PB_KolorLiniiWykresu = new System.Windows.Forms.TextBox();
-            this.PB_WybierzKolorTłaWykresu = new System.Windows.Forms.Button();
-            this.PB_InfoKolorWykresu = new System.Windows.Forms.Label();
-            this.PB_KolorTłaWykresu = new System.Windows.Forms.TextBox();
-            this.PB_InfoGrubośćLinii = new System.Windows.Forms.Label();
-            this.PB_InfoStylLinii = new System.Windows.Forms.Label();
-            this.PB_StylLiniiWykresu = new System.Windows.Forms.ComboBox();
-            this.PB_InfoRodzajWykresu = new System.Windows.Forms.Label();
-            this.PB_RodzajWykresu = new System.Windows.Forms.ComboBox();
-            this.PB_InfoSK = new System.Windows.Forms.Label();
-            this.PB_PSK_wyświetl = new System.Windows.Forms.TextBox();
-            this.PB_ObliczStanKonta = new System.Windows.Forms.Button();
-            this.PB_TabelaryczneRozliczenieLokaty = new System.Windows.Forms.Button();
-            this.PB_GraficznaPrezentacjaLokaty = new System.Windows.Forms.Button();
-            this.PB_PrzejdźDoKredyty = new System.Windows.Forms.Button();
-            this.PB_Obrazek = new System.Windows.Forms.PictureBox();
-            this.PB_TabelarycznaPrezentacjaLokaty = new System.Windows.Forms.DataGridView();
-            this.PB_DGW_OkresLokaty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PB_DGWStanNaPoczątku = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PB_DGWOdsetki = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PB_DGWStanKontaNaKońcu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PB_WykresLokata = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.InfoNL = new System.Windows.Forms.Label();
+            this.InfoKwota = new System.Windows.Forms.Label();
+            this.KwotaLokaty = new System.Windows.Forms.TextBox();
+            this.InfoOprocentowanie = new System.Windows.Forms.Label();
+            this.Oprocentowanie = new System.Windows.Forms.ComboBox();
+            this.InfoOkres = new System.Windows.Forms.Label();
+            this.CzasNaliczaniaLokaty = new System.Windows.Forms.TextBox();
+            this._WybierzKolorLiniiWykresu = new System.Windows.Forms.Button();
+            this.InfoKolorLinii = new System.Windows.Forms.Label();
+            this.KolorLiniiWykresu = new System.Windows.Forms.TextBox();
+            this.WybierzKolorTłaWykresu = new System.Windows.Forms.Button();
+            this.InfoKolorWykresu = new System.Windows.Forms.Label();
+            this.KolorTłaWykresu = new System.Windows.Forms.TextBox();
+            this.InfoGrubośćLinii = new System.Windows.Forms.Label();
+            this.InfoStylLinii = new System.Windows.Forms.Label();
+            this.StylLiniiWykresu = new System.Windows.Forms.ComboBox();
+            this.InfoRodzajWykresu = new System.Windows.Forms.Label();
+            this.RodzajWykresu = new System.Windows.Forms.ComboBox();
+            this.InfoSK = new System.Windows.Forms.Label();
+            this.PSK_wyświetl = new System.Windows.Forms.TextBox();
+            this.ObliczStanKonta = new System.Windows.Forms.Button();
+            this.TabelaryczneRozliczenieLokaty = new System.Windows.Forms.Button();
+            this.GraficznaPrezentacjaLokaty = new System.Windows.Forms.Button();
+            this.PrzejdźDoKredyty = new System.Windows.Forms.Button();
+            this.Obrazek = new System.Windows.Forms.PictureBox();
+            this.TabelarycznaPrezentacjaLokaty = new System.Windows.Forms.DataGridView();
+            this.DGW_OkresLokaty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGWStanNaPoczątku = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGWOdsetki = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGWStanKontaNaKońcu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WykresLokata = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.PB_GrubośćLiniiWykresu = new System.Windows.Forms.TrackBar();
-            this.PB_InfoSN = new System.Windows.Forms.Label();
-            this.PB_MenuLokaty.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_Obrazek)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_TabelarycznaPrezentacjaLokaty)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_WykresLokata)).BeginInit();
+            this.GrubośćLiniiWykresu = new System.Windows.Forms.TrackBar();
+            this.InfoSN = new System.Windows.Forms.Label();
+            this.MenuLokaty.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Obrazek)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TabelarycznaPrezentacjaLokaty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WykresLokata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_GrubośćLiniiWykresu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GrubośćLiniiWykresu)).BeginInit();
             this.SuspendLayout();
             // 
-            // PB_MenuLokaty
+            // MenuLokaty
             // 
-            this.PB_MenuLokaty.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.PB_LokatyFile,
-            this.PB_LokatyZTW});
-            this.PB_MenuLokaty.Location = new System.Drawing.Point(0, 0);
-            this.PB_MenuLokaty.Name = "PB_MenuLokaty";
-            this.PB_MenuLokaty.Size = new System.Drawing.Size(784, 24);
-            this.PB_MenuLokaty.TabIndex = 0;
-            this.PB_MenuLokaty.Text = "menuStrip1";
+            this.MenuLokaty.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LokatyFile,
+            this.LokatyZTW});
+            this.MenuLokaty.Location = new System.Drawing.Point(0, 0);
+            this.MenuLokaty.Name = "MenuLokaty";
+            this.MenuLokaty.Size = new System.Drawing.Size(784, 24);
+            this.MenuLokaty.TabIndex = 0;
+            this.MenuLokaty.Text = "menuStrip1";
             // 
-            // PB_LokatyFile
+            // LokatyFile
             // 
-            this.PB_LokatyFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LokatyFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
-            this.PB_LokatyFile.Name = "PB_LokatyFile";
-            this.PB_LokatyFile.Size = new System.Drawing.Size(37, 20);
-            this.PB_LokatyFile.Text = "File";
+            this.LokatyFile.Name = "LokatyFile";
+            this.LokatyFile.Size = new System.Drawing.Size(37, 20);
+            this.LokatyFile.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
@@ -111,9 +111,9 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // PB_LokatyZTW
+            // LokatyZTW
             // 
-            this.PB_LokatyZTW.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LokatyZTW.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lineToolStripMenuItem,
             this.barToolStripMenuItem,
             this.bubbleToolStripMenuItem,
@@ -121,9 +121,9 @@
             this.radarToolStripMenuItem,
             this.rangeBarToolStripMenuItem,
             this.stepLineToolStripMenuItem});
-            this.PB_LokatyZTW.Name = "PB_LokatyZTW";
-            this.PB_LokatyZTW.Size = new System.Drawing.Size(132, 20);
-            this.PB_LokatyZTW.Text = "Zmiana typu wykresu";
+            this.LokatyZTW.Name = "LokatyZTW";
+            this.LokatyZTW.Size = new System.Drawing.Size(132, 20);
+            this.LokatyZTW.Text = "Zmiana typu wykresu";
             // 
             // lineToolStripMenuItem
             // 
@@ -174,46 +174,46 @@
             this.stepLineToolStripMenuItem.Text = "StepLine";
             this.stepLineToolStripMenuItem.Click += new System.EventHandler(this.stepLineToolStripMenuItem_Click);
             // 
-            // PB_InfoNL
+            // InfoNL
             // 
-            this.PB_InfoNL.AutoSize = true;
-            this.PB_InfoNL.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.PB_InfoNL.Location = new System.Drawing.Point(125, 34);
-            this.PB_InfoNL.Name = "PB_InfoNL";
-            this.PB_InfoNL.Size = new System.Drawing.Size(503, 16);
-            this.PB_InfoNL.TabIndex = 1;
-            this.PB_InfoNL.Text = "Obliczanie i wizualizacja przyszłego stanu konta wg. zadanych parametrów";
+            this.InfoNL.AutoSize = true;
+            this.InfoNL.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.InfoNL.Location = new System.Drawing.Point(125, 34);
+            this.InfoNL.Name = "InfoNL";
+            this.InfoNL.Size = new System.Drawing.Size(503, 16);
+            this.InfoNL.TabIndex = 1;
+            this.InfoNL.Text = "Obliczanie i wizualizacja przyszłego stanu konta wg. zadanych parametrów";
             // 
-            // PB_InfoKwota
+            // InfoKwota
             // 
-            this.PB_InfoKwota.AutoSize = true;
-            this.PB_InfoKwota.Location = new System.Drawing.Point(12, 48);
-            this.PB_InfoKwota.Name = "PB_InfoKwota";
-            this.PB_InfoKwota.Size = new System.Drawing.Size(68, 13);
-            this.PB_InfoKwota.TabIndex = 2;
-            this.PB_InfoKwota.Text = "Kwota lokaty";
+            this.InfoKwota.AutoSize = true;
+            this.InfoKwota.Location = new System.Drawing.Point(12, 48);
+            this.InfoKwota.Name = "InfoKwota";
+            this.InfoKwota.Size = new System.Drawing.Size(68, 13);
+            this.InfoKwota.TabIndex = 2;
+            this.InfoKwota.Text = "Kwota lokaty";
             // 
-            // PB_KwotaLokaty
+            // KwotaLokaty
             // 
-            this.PB_KwotaLokaty.Location = new System.Drawing.Point(12, 64);
-            this.PB_KwotaLokaty.Name = "PB_KwotaLokaty";
-            this.PB_KwotaLokaty.Size = new System.Drawing.Size(106, 20);
-            this.PB_KwotaLokaty.TabIndex = 3;
-            this.PB_KwotaLokaty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PB_KwotaLokaty_KeyPress);
+            this.KwotaLokaty.Location = new System.Drawing.Point(12, 64);
+            this.KwotaLokaty.Name = "KwotaLokaty";
+            this.KwotaLokaty.Size = new System.Drawing.Size(106, 20);
+            this.KwotaLokaty.TabIndex = 3;
+            this.KwotaLokaty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KwotaLokaty_KeyPress);
             // 
-            // PB_InfoOprocentowanie
+            // InfoOprocentowanie
             // 
-            this.PB_InfoOprocentowanie.AutoSize = true;
-            this.PB_InfoOprocentowanie.Location = new System.Drawing.Point(12, 87);
-            this.PB_InfoOprocentowanie.Name = "PB_InfoOprocentowanie";
-            this.PB_InfoOprocentowanie.Size = new System.Drawing.Size(94, 13);
-            this.PB_InfoOprocentowanie.TabIndex = 4;
-            this.PB_InfoOprocentowanie.Text = "Stopa procentowa";
+            this.InfoOprocentowanie.AutoSize = true;
+            this.InfoOprocentowanie.Location = new System.Drawing.Point(12, 87);
+            this.InfoOprocentowanie.Name = "InfoOprocentowanie";
+            this.InfoOprocentowanie.Size = new System.Drawing.Size(94, 13);
+            this.InfoOprocentowanie.TabIndex = 4;
+            this.InfoOprocentowanie.Text = "Stopa procentowa";
             // 
-            // PB_Oprocentowanie
+            // Oprocentowanie
             // 
-            this.PB_Oprocentowanie.FormattingEnabled = true;
-            this.PB_Oprocentowanie.Items.AddRange(new object[] {
+            this.Oprocentowanie.FormattingEnabled = true;
+            this.Oprocentowanie.Items.AddRange(new object[] {
             "0,02",
             "0,03",
             "0,04",
@@ -221,132 +221,132 @@
             "0,06",
             "0,07",
             "0,08"});
-            this.PB_Oprocentowanie.Location = new System.Drawing.Point(12, 103);
-            this.PB_Oprocentowanie.Name = "PB_Oprocentowanie";
-            this.PB_Oprocentowanie.Size = new System.Drawing.Size(106, 21);
-            this.PB_Oprocentowanie.TabIndex = 5;
+            this.Oprocentowanie.Location = new System.Drawing.Point(12, 103);
+            this.Oprocentowanie.Name = "Oprocentowanie";
+            this.Oprocentowanie.Size = new System.Drawing.Size(106, 21);
+            this.Oprocentowanie.TabIndex = 5;
             // 
-            // PB_InfoOkres
+            // InfoOkres
             // 
-            this.PB_InfoOkres.AutoSize = true;
-            this.PB_InfoOkres.Location = new System.Drawing.Point(12, 127);
-            this.PB_InfoOkres.Name = "PB_InfoOkres";
-            this.PB_InfoOkres.Size = new System.Drawing.Size(66, 13);
-            this.PB_InfoOkres.TabIndex = 6;
-            this.PB_InfoOkres.Text = "Okres lokaty";
+            this.InfoOkres.AutoSize = true;
+            this.InfoOkres.Location = new System.Drawing.Point(12, 127);
+            this.InfoOkres.Name = "InfoOkres";
+            this.InfoOkres.Size = new System.Drawing.Size(66, 13);
+            this.InfoOkres.TabIndex = 6;
+            this.InfoOkres.Text = "Okres lokaty";
             // 
-            // PB_CzasNaliczaniaLokaty
+            // CzasNaliczaniaLokaty
             // 
-            this.PB_CzasNaliczaniaLokaty.Location = new System.Drawing.Point(12, 143);
-            this.PB_CzasNaliczaniaLokaty.Name = "PB_CzasNaliczaniaLokaty";
-            this.PB_CzasNaliczaniaLokaty.Size = new System.Drawing.Size(106, 20);
-            this.PB_CzasNaliczaniaLokaty.TabIndex = 7;
-            this.PB_CzasNaliczaniaLokaty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PB_OkresLokaty_KeyPress);
+            this.CzasNaliczaniaLokaty.Location = new System.Drawing.Point(12, 143);
+            this.CzasNaliczaniaLokaty.Name = "CzasNaliczaniaLokaty";
+            this.CzasNaliczaniaLokaty.Size = new System.Drawing.Size(106, 20);
+            this.CzasNaliczaniaLokaty.TabIndex = 7;
+            this.CzasNaliczaniaLokaty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OkresLokaty_KeyPress);
             // 
-            // _PB_WybierzKolorLiniiWykresu
+            // _WybierzKolorLiniiWykresu
             // 
-            this._PB_WybierzKolorLiniiWykresu.Location = new System.Drawing.Point(12, 169);
-            this._PB_WybierzKolorLiniiWykresu.Name = "_PB_WybierzKolorLiniiWykresu";
-            this._PB_WybierzKolorLiniiWykresu.Size = new System.Drawing.Size(106, 23);
-            this._PB_WybierzKolorLiniiWykresu.TabIndex = 8;
-            this._PB_WybierzKolorLiniiWykresu.Text = "Kolor linii wykresu";
-            this._PB_WybierzKolorLiniiWykresu.UseVisualStyleBackColor = true;
-            this._PB_WybierzKolorLiniiWykresu.Click += new System.EventHandler(this._PB_WybierzKolorLiniiWykresu_Click);
+            this._WybierzKolorLiniiWykresu.Location = new System.Drawing.Point(12, 169);
+            this._WybierzKolorLiniiWykresu.Name = "_WybierzKolorLiniiWykresu";
+            this._WybierzKolorLiniiWykresu.Size = new System.Drawing.Size(106, 23);
+            this._WybierzKolorLiniiWykresu.TabIndex = 8;
+            this._WybierzKolorLiniiWykresu.Text = "Kolor linii wykresu";
+            this._WybierzKolorLiniiWykresu.UseVisualStyleBackColor = true;
+            this._WybierzKolorLiniiWykresu.Click += new System.EventHandler(this._WybierzKolorLiniiWykresu_Click);
             // 
-            // PB_InfoKolorLinii
+            // InfoKolorLinii
             // 
-            this.PB_InfoKolorLinii.AutoSize = true;
-            this.PB_InfoKolorLinii.Location = new System.Drawing.Point(12, 195);
-            this.PB_InfoKolorLinii.Name = "PB_InfoKolorLinii";
-            this.PB_InfoKolorLinii.Size = new System.Drawing.Size(90, 13);
-            this.PB_InfoKolorLinii.TabIndex = 9;
-            this.PB_InfoKolorLinii.Text = "Kolor linii wykresu";
+            this.InfoKolorLinii.AutoSize = true;
+            this.InfoKolorLinii.Location = new System.Drawing.Point(12, 195);
+            this.InfoKolorLinii.Name = "InfoKolorLinii";
+            this.InfoKolorLinii.Size = new System.Drawing.Size(90, 13);
+            this.InfoKolorLinii.TabIndex = 9;
+            this.InfoKolorLinii.Text = "Kolor linii wykresu";
             // 
-            // PB_KolorLiniiWykresu
+            // KolorLiniiWykresu
             // 
-            this.PB_KolorLiniiWykresu.BackColor = System.Drawing.Color.Blue;
-            this.PB_KolorLiniiWykresu.Enabled = false;
-            this.PB_KolorLiniiWykresu.Location = new System.Drawing.Point(12, 211);
-            this.PB_KolorLiniiWykresu.Name = "PB_KolorLiniiWykresu";
-            this.PB_KolorLiniiWykresu.Size = new System.Drawing.Size(106, 20);
-            this.PB_KolorLiniiWykresu.TabIndex = 10;
+            this.KolorLiniiWykresu.BackColor = System.Drawing.Color.Blue;
+            this.KolorLiniiWykresu.Enabled = false;
+            this.KolorLiniiWykresu.Location = new System.Drawing.Point(12, 211);
+            this.KolorLiniiWykresu.Name = "KolorLiniiWykresu";
+            this.KolorLiniiWykresu.Size = new System.Drawing.Size(106, 20);
+            this.KolorLiniiWykresu.TabIndex = 10;
             // 
-            // PB_WybierzKolorTłaWykresu
+            // WybierzKolorTłaWykresu
             // 
-            this.PB_WybierzKolorTłaWykresu.Location = new System.Drawing.Point(12, 237);
-            this.PB_WybierzKolorTłaWykresu.Name = "PB_WybierzKolorTłaWykresu";
-            this.PB_WybierzKolorTłaWykresu.Size = new System.Drawing.Size(106, 23);
-            this.PB_WybierzKolorTłaWykresu.TabIndex = 11;
-            this.PB_WybierzKolorTłaWykresu.Text = "Kolor tła wykresu";
-            this.PB_WybierzKolorTłaWykresu.UseVisualStyleBackColor = true;
-            this.PB_WybierzKolorTłaWykresu.Click += new System.EventHandler(this.PB_WybierzKolorTłaWykresu_Click);
+            this.WybierzKolorTłaWykresu.Location = new System.Drawing.Point(12, 237);
+            this.WybierzKolorTłaWykresu.Name = "WybierzKolorTłaWykresu";
+            this.WybierzKolorTłaWykresu.Size = new System.Drawing.Size(106, 23);
+            this.WybierzKolorTłaWykresu.TabIndex = 11;
+            this.WybierzKolorTłaWykresu.Text = "Kolor tła wykresu";
+            this.WybierzKolorTłaWykresu.UseVisualStyleBackColor = true;
+            this.WybierzKolorTłaWykresu.Click += new System.EventHandler(this.WybierzKolorTłaWykresu_Click);
             // 
-            // PB_InfoKolorWykresu
+            // InfoKolorWykresu
             // 
-            this.PB_InfoKolorWykresu.AutoSize = true;
-            this.PB_InfoKolorWykresu.Location = new System.Drawing.Point(12, 263);
-            this.PB_InfoKolorWykresu.Name = "PB_InfoKolorWykresu";
-            this.PB_InfoKolorWykresu.Size = new System.Drawing.Size(89, 13);
-            this.PB_InfoKolorWykresu.TabIndex = 12;
-            this.PB_InfoKolorWykresu.Text = "Kolor tła wykresu";
+            this.InfoKolorWykresu.AutoSize = true;
+            this.InfoKolorWykresu.Location = new System.Drawing.Point(12, 263);
+            this.InfoKolorWykresu.Name = "InfoKolorWykresu";
+            this.InfoKolorWykresu.Size = new System.Drawing.Size(89, 13);
+            this.InfoKolorWykresu.TabIndex = 12;
+            this.InfoKolorWykresu.Text = "Kolor tła wykresu";
             // 
-            // PB_KolorTłaWykresu
+            // KolorTłaWykresu
             // 
-            this.PB_KolorTłaWykresu.BackColor = System.Drawing.Color.Aqua;
-            this.PB_KolorTłaWykresu.Enabled = false;
-            this.PB_KolorTłaWykresu.Location = new System.Drawing.Point(12, 279);
-            this.PB_KolorTłaWykresu.Name = "PB_KolorTłaWykresu";
-            this.PB_KolorTłaWykresu.Size = new System.Drawing.Size(106, 20);
-            this.PB_KolorTłaWykresu.TabIndex = 13;
+            this.KolorTłaWykresu.BackColor = System.Drawing.Color.Aqua;
+            this.KolorTłaWykresu.Enabled = false;
+            this.KolorTłaWykresu.Location = new System.Drawing.Point(12, 279);
+            this.KolorTłaWykresu.Name = "KolorTłaWykresu";
+            this.KolorTłaWykresu.Size = new System.Drawing.Size(106, 20);
+            this.KolorTłaWykresu.TabIndex = 13;
             // 
-            // PB_InfoGrubośćLinii
+            // InfoGrubośćLinii
             // 
-            this.PB_InfoGrubośćLinii.AutoSize = true;
-            this.PB_InfoGrubośćLinii.Location = new System.Drawing.Point(19, 302);
-            this.PB_InfoGrubośćLinii.Name = "PB_InfoGrubośćLinii";
-            this.PB_InfoGrubośćLinii.Size = new System.Drawing.Size(68, 13);
-            this.PB_InfoGrubośćLinii.TabIndex = 14;
-            this.PB_InfoGrubośćLinii.Text = "Grubość Linii";
+            this.InfoGrubośćLinii.AutoSize = true;
+            this.InfoGrubośćLinii.Location = new System.Drawing.Point(19, 302);
+            this.InfoGrubośćLinii.Name = "InfoGrubośćLinii";
+            this.InfoGrubośćLinii.Size = new System.Drawing.Size(68, 13);
+            this.InfoGrubośćLinii.TabIndex = 14;
+            this.InfoGrubośćLinii.Text = "Grubość Linii";
             // 
-            // PB_InfoStylLinii
+            // InfoStylLinii
             // 
-            this.PB_InfoStylLinii.AutoSize = true;
-            this.PB_InfoStylLinii.Location = new System.Drawing.Point(12, 373);
-            this.PB_InfoStylLinii.Name = "PB_InfoStylLinii";
-            this.PB_InfoStylLinii.Size = new System.Drawing.Size(42, 13);
-            this.PB_InfoStylLinii.TabIndex = 16;
-            this.PB_InfoStylLinii.Text = "StylLinii";
+            this.InfoStylLinii.AutoSize = true;
+            this.InfoStylLinii.Location = new System.Drawing.Point(12, 373);
+            this.InfoStylLinii.Name = "InfoStylLinii";
+            this.InfoStylLinii.Size = new System.Drawing.Size(42, 13);
+            this.InfoStylLinii.TabIndex = 16;
+            this.InfoStylLinii.Text = "StylLinii";
             // 
-            // PB_StylLiniiWykresu
+            // StylLiniiWykresu
             // 
-            this.PB_StylLiniiWykresu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.PB_StylLiniiWykresu.FormattingEnabled = true;
-            this.PB_StylLiniiWykresu.Items.AddRange(new object[] {
+            this.StylLiniiWykresu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.StylLiniiWykresu.FormattingEnabled = true;
+            this.StylLiniiWykresu.Items.AddRange(new object[] {
             "- - - - - - - - - - - -",
             "- ˑ - ˑ - ˑ - ˑ - ˑ - ˑ -",
             "- ˑˑ - ˑˑ - ˑˑ - ˑˑ - ˑ",
             "ˑˑˑˑˑˑˑˑˑˑˑˑˑˑˑˑˑˑˑˑˑˑˑ",
             "——————————"});
-            this.PB_StylLiniiWykresu.Location = new System.Drawing.Point(12, 389);
-            this.PB_StylLiniiWykresu.Name = "PB_StylLiniiWykresu";
-            this.PB_StylLiniiWykresu.Size = new System.Drawing.Size(106, 24);
-            this.PB_StylLiniiWykresu.TabIndex = 17;
-            this.PB_StylLiniiWykresu.Text = "————————————————————";
-            this.PB_StylLiniiWykresu.SelectedIndexChanged += new System.EventHandler(this.PB_StylLiniiWykresu_SelectedIndexChanged);
+            this.StylLiniiWykresu.Location = new System.Drawing.Point(12, 389);
+            this.StylLiniiWykresu.Name = "StylLiniiWykresu";
+            this.StylLiniiWykresu.Size = new System.Drawing.Size(106, 24);
+            this.StylLiniiWykresu.TabIndex = 17;
+            this.StylLiniiWykresu.Text = "————————————————————";
+            this.StylLiniiWykresu.SelectedIndexChanged += new System.EventHandler(this.StylLiniiWykresu_SelectedIndexChanged);
             // 
-            // PB_InfoRodzajWykresu
+            // InfoRodzajWykresu
             // 
-            this.PB_InfoRodzajWykresu.AutoSize = true;
-            this.PB_InfoRodzajWykresu.Location = new System.Drawing.Point(12, 413);
-            this.PB_InfoRodzajWykresu.Name = "PB_InfoRodzajWykresu";
-            this.PB_InfoRodzajWykresu.Size = new System.Drawing.Size(82, 13);
-            this.PB_InfoRodzajWykresu.TabIndex = 18;
-            this.PB_InfoRodzajWykresu.Text = "Rodzaj wykresu";
+            this.InfoRodzajWykresu.AutoSize = true;
+            this.InfoRodzajWykresu.Location = new System.Drawing.Point(12, 413);
+            this.InfoRodzajWykresu.Name = "InfoRodzajWykresu";
+            this.InfoRodzajWykresu.Size = new System.Drawing.Size(82, 13);
+            this.InfoRodzajWykresu.TabIndex = 18;
+            this.InfoRodzajWykresu.Text = "Rodzaj wykresu";
             // 
-            // PB_RodzajWykresu
+            // RodzajWykresu
             // 
-            this.PB_RodzajWykresu.FormattingEnabled = true;
-            this.PB_RodzajWykresu.Items.AddRange(new object[] {
+            this.RodzajWykresu.FormattingEnabled = true;
+            this.RodzajWykresu.Items.AddRange(new object[] {
             "Line",
             "Bar",
             "Bubble",
@@ -354,222 +354,222 @@
             "Radar",
             "RangeBar",
             "StepLine"});
-            this.PB_RodzajWykresu.Location = new System.Drawing.Point(12, 430);
-            this.PB_RodzajWykresu.Name = "PB_RodzajWykresu";
-            this.PB_RodzajWykresu.Size = new System.Drawing.Size(106, 21);
-            this.PB_RodzajWykresu.TabIndex = 19;
-            this.PB_RodzajWykresu.Text = "Line";
-            this.PB_RodzajWykresu.SelectedIndexChanged += new System.EventHandler(this.PB_RodzajWykresu_SelectedIndexChanged);
+            this.RodzajWykresu.Location = new System.Drawing.Point(12, 430);
+            this.RodzajWykresu.Name = "RodzajWykresu";
+            this.RodzajWykresu.Size = new System.Drawing.Size(106, 21);
+            this.RodzajWykresu.TabIndex = 19;
+            this.RodzajWykresu.Text = "Line";
+            this.RodzajWykresu.SelectedIndexChanged += new System.EventHandler(this.RodzajWykresu_SelectedIndexChanged);
             // 
-            // PB_InfoSK
+            // InfoSK
             // 
-            this.PB_InfoSK.Location = new System.Drawing.Point(641, 48);
-            this.PB_InfoSK.Name = "PB_InfoSK";
-            this.PB_InfoSK.Size = new System.Drawing.Size(116, 29);
-            this.PB_InfoSK.TabIndex = 20;
-            this.PB_InfoSK.Text = "Stan konta po okresie lokaty";
-            this.PB_InfoSK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.InfoSK.Location = new System.Drawing.Point(641, 48);
+            this.InfoSK.Name = "InfoSK";
+            this.InfoSK.Size = new System.Drawing.Size(116, 29);
+            this.InfoSK.TabIndex = 20;
+            this.InfoSK.Text = "Stan konta po okresie lokaty";
+            this.InfoSK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // PB_PSK_wyświetl
+            // PSK_wyświetl
             // 
-            this.PB_PSK_wyświetl.Enabled = false;
-            this.PB_PSK_wyświetl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.PB_PSK_wyświetl.Location = new System.Drawing.Point(642, 80);
-            this.PB_PSK_wyświetl.Name = "PB_PSK_wyświetl";
-            this.PB_PSK_wyświetl.Size = new System.Drawing.Size(115, 20);
-            this.PB_PSK_wyświetl.TabIndex = 21;
+            this.PSK_wyświetl.Enabled = false;
+            this.PSK_wyświetl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PSK_wyświetl.Location = new System.Drawing.Point(642, 80);
+            this.PSK_wyświetl.Name = "PSK_wyświetl";
+            this.PSK_wyświetl.Size = new System.Drawing.Size(115, 20);
+            this.PSK_wyświetl.TabIndex = 21;
             // 
-            // PB_ObliczStanKonta
+            // ObliczStanKonta
             // 
-            this.PB_ObliczStanKonta.Location = new System.Drawing.Point(642, 115);
-            this.PB_ObliczStanKonta.Name = "PB_ObliczStanKonta";
-            this.PB_ObliczStanKonta.Size = new System.Drawing.Size(115, 37);
-            this.PB_ObliczStanKonta.TabIndex = 22;
-            this.PB_ObliczStanKonta.Text = "Oblicz stan konta";
-            this.PB_ObliczStanKonta.UseVisualStyleBackColor = true;
-            this.PB_ObliczStanKonta.Click += new System.EventHandler(this.PB_ObliczStanKonta_Click);
+            this.ObliczStanKonta.Location = new System.Drawing.Point(642, 115);
+            this.ObliczStanKonta.Name = "ObliczStanKonta";
+            this.ObliczStanKonta.Size = new System.Drawing.Size(115, 37);
+            this.ObliczStanKonta.TabIndex = 22;
+            this.ObliczStanKonta.Text = "Oblicz stan konta";
+            this.ObliczStanKonta.UseVisualStyleBackColor = true;
+            this.ObliczStanKonta.Click += new System.EventHandler(this.ObliczStanKonta_Click);
             // 
-            // PB_TabelaryczneRozliczenieLokaty
+            // TabelaryczneRozliczenieLokaty
             // 
-            this.PB_TabelaryczneRozliczenieLokaty.Location = new System.Drawing.Point(642, 158);
-            this.PB_TabelaryczneRozliczenieLokaty.Name = "PB_TabelaryczneRozliczenieLokaty";
-            this.PB_TabelaryczneRozliczenieLokaty.Size = new System.Drawing.Size(115, 47);
-            this.PB_TabelaryczneRozliczenieLokaty.TabIndex = 23;
-            this.PB_TabelaryczneRozliczenieLokaty.Text = "Tabelaryczna prezentacja wartości lokaty";
-            this.PB_TabelaryczneRozliczenieLokaty.UseVisualStyleBackColor = true;
-            this.PB_TabelaryczneRozliczenieLokaty.Click += new System.EventHandler(this.PB_TabelaryczneRozliczenieLokaty_Click);
+            this.TabelaryczneRozliczenieLokaty.Location = new System.Drawing.Point(642, 158);
+            this.TabelaryczneRozliczenieLokaty.Name = "TabelaryczneRozliczenieLokaty";
+            this.TabelaryczneRozliczenieLokaty.Size = new System.Drawing.Size(115, 47);
+            this.TabelaryczneRozliczenieLokaty.TabIndex = 23;
+            this.TabelaryczneRozliczenieLokaty.Text = "Tabelaryczna prezentacja wartości lokaty";
+            this.TabelaryczneRozliczenieLokaty.UseVisualStyleBackColor = true;
+            this.TabelaryczneRozliczenieLokaty.Click += new System.EventHandler(this.TabelaryczneRozliczenieLokaty_Click);
             // 
-            // PB_GraficznaPrezentacjaLokaty
+            // GraficznaPrezentacjaLokaty
             // 
-            this.PB_GraficznaPrezentacjaLokaty.Location = new System.Drawing.Point(642, 211);
-            this.PB_GraficznaPrezentacjaLokaty.Name = "PB_GraficznaPrezentacjaLokaty";
-            this.PB_GraficznaPrezentacjaLokaty.Size = new System.Drawing.Size(115, 61);
-            this.PB_GraficznaPrezentacjaLokaty.TabIndex = 24;
-            this.PB_GraficznaPrezentacjaLokaty.Text = "Graficzna prezentacja przebiegu zmian artości lokaty";
-            this.PB_GraficznaPrezentacjaLokaty.UseVisualStyleBackColor = true;
-            this.PB_GraficznaPrezentacjaLokaty.Click += new System.EventHandler(this.PB_GraficznaPrezentacjaLokaty_Click);
+            this.GraficznaPrezentacjaLokaty.Location = new System.Drawing.Point(642, 211);
+            this.GraficznaPrezentacjaLokaty.Name = "GraficznaPrezentacjaLokaty";
+            this.GraficznaPrezentacjaLokaty.Size = new System.Drawing.Size(115, 61);
+            this.GraficznaPrezentacjaLokaty.TabIndex = 24;
+            this.GraficznaPrezentacjaLokaty.Text = "Graficzna prezentacja przebiegu zmian artości lokaty";
+            this.GraficznaPrezentacjaLokaty.UseVisualStyleBackColor = true;
+            this.GraficznaPrezentacjaLokaty.Click += new System.EventHandler(this.GraficznaPrezentacjaLokaty_Click);
             // 
-            // PB_PrzejdźDoKredyty
+            // PrzejdźDoKredyty
             // 
-            this.PB_PrzejdźDoKredyty.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.PB_PrzejdźDoKredyty.Location = new System.Drawing.Point(642, 354);
-            this.PB_PrzejdźDoKredyty.Name = "PB_PrzejdźDoKredyty";
-            this.PB_PrzejdźDoKredyty.Size = new System.Drawing.Size(115, 50);
-            this.PB_PrzejdźDoKredyty.TabIndex = 25;
-            this.PB_PrzejdźDoKredyty.Text = "Przejdź do formularza KREDYTY";
-            this.PB_PrzejdźDoKredyty.UseVisualStyleBackColor = true;
-            this.PB_PrzejdźDoKredyty.Click += new System.EventHandler(this.PB_PrzejdźDoKredyty_Click);
+            this.PrzejdźDoKredyty.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PrzejdźDoKredyty.Location = new System.Drawing.Point(642, 354);
+            this.PrzejdźDoKredyty.Name = "PrzejdźDoKredyty";
+            this.PrzejdźDoKredyty.Size = new System.Drawing.Size(115, 50);
+            this.PrzejdźDoKredyty.TabIndex = 25;
+            this.PrzejdźDoKredyty.Text = "Przejdź do formularza KREDYTY";
+            this.PrzejdźDoKredyty.UseVisualStyleBackColor = true;
+            this.PrzejdźDoKredyty.Click += new System.EventHandler(this.PrzejdźDoKredyty_Click);
             // 
-            // PB_Obrazek
+            // Obrazek
             // 
-            this.PB_Obrazek.Image = global::Lokaty_Kredyty.Properties.Resources.sztabki_zlota1;
-            this.PB_Obrazek.Location = new System.Drawing.Point(152, 74);
-            this.PB_Obrazek.Name = "PB_Obrazek";
-            this.PB_Obrazek.Size = new System.Drawing.Size(437, 330);
-            this.PB_Obrazek.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_Obrazek.TabIndex = 26;
-            this.PB_Obrazek.TabStop = false;
+            this.Obrazek.Image = global::Lokaty_Kredyty.Properties.Resources.sztabki_zlota1;
+            this.Obrazek.Location = new System.Drawing.Point(152, 74);
+            this.Obrazek.Name = "Obrazek";
+            this.Obrazek.Size = new System.Drawing.Size(437, 330);
+            this.Obrazek.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Obrazek.TabIndex = 26;
+            this.Obrazek.TabStop = false;
             // 
-            // PB_TabelarycznaPrezentacjaLokaty
+            // TabelarycznaPrezentacjaLokaty
             // 
-            this.PB_TabelarycznaPrezentacjaLokaty.AllowUserToAddRows = false;
-            this.PB_TabelarycznaPrezentacjaLokaty.AllowUserToDeleteRows = false;
-            this.PB_TabelarycznaPrezentacjaLokaty.AllowUserToResizeColumns = false;
-            this.PB_TabelarycznaPrezentacjaLokaty.AllowUserToResizeRows = false;
-            this.PB_TabelarycznaPrezentacjaLokaty.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.PB_TabelarycznaPrezentacjaLokaty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PB_TabelarycznaPrezentacjaLokaty.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PB_DGW_OkresLokaty,
-            this.PB_DGWStanNaPoczątku,
-            this.PB_DGWOdsetki,
-            this.PB_DGWStanKontaNaKońcu});
-            this.PB_TabelarycznaPrezentacjaLokaty.Location = new System.Drawing.Point(152, 64);
-            this.PB_TabelarycznaPrezentacjaLokaty.Name = "PB_TabelarycznaPrezentacjaLokaty";
-            this.PB_TabelarycznaPrezentacjaLokaty.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.PB_TabelarycznaPrezentacjaLokaty.Size = new System.Drawing.Size(453, 365);
-            this.PB_TabelarycznaPrezentacjaLokaty.TabIndex = 27;
-            this.PB_TabelarycznaPrezentacjaLokaty.Visible = false;
+            this.TabelarycznaPrezentacjaLokaty.AllowUserToAddRows = false;
+            this.TabelarycznaPrezentacjaLokaty.AllowUserToDeleteRows = false;
+            this.TabelarycznaPrezentacjaLokaty.AllowUserToResizeColumns = false;
+            this.TabelarycznaPrezentacjaLokaty.AllowUserToResizeRows = false;
+            this.TabelarycznaPrezentacjaLokaty.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.TabelarycznaPrezentacjaLokaty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TabelarycznaPrezentacjaLokaty.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGW_OkresLokaty,
+            this.DGWStanNaPoczątku,
+            this.DGWOdsetki,
+            this.DGWStanKontaNaKońcu});
+            this.TabelarycznaPrezentacjaLokaty.Location = new System.Drawing.Point(152, 64);
+            this.TabelarycznaPrezentacjaLokaty.Name = "TabelarycznaPrezentacjaLokaty";
+            this.TabelarycznaPrezentacjaLokaty.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TabelarycznaPrezentacjaLokaty.Size = new System.Drawing.Size(453, 365);
+            this.TabelarycznaPrezentacjaLokaty.TabIndex = 27;
+            this.TabelarycznaPrezentacjaLokaty.Visible = false;
             // 
-            // PB_DGW_OkresLokaty
+            // DGW_OkresLokaty
             // 
-            this.PB_DGW_OkresLokaty.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.PB_DGW_OkresLokaty.HeaderText = "Okres Lokaty";
-            this.PB_DGW_OkresLokaty.Name = "PB_DGW_OkresLokaty";
-            this.PB_DGW_OkresLokaty.ReadOnly = true;
-            this.PB_DGW_OkresLokaty.Width = 87;
+            this.DGW_OkresLokaty.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.DGW_OkresLokaty.HeaderText = "Okres Lokaty";
+            this.DGW_OkresLokaty.Name = "DGW_OkresLokaty";
+            this.DGW_OkresLokaty.ReadOnly = true;
+            this.DGW_OkresLokaty.Width = 87;
             // 
-            // PB_DGWStanNaPoczątku
+            // DGWStanNaPoczątku
             // 
-            this.PB_DGWStanNaPoczątku.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.PB_DGWStanNaPoczątku.HeaderText = "Stan na początku";
-            this.PB_DGWStanNaPoczątku.Name = "PB_DGWStanNaPoczątku";
-            this.PB_DGWStanNaPoczątku.ReadOnly = true;
-            this.PB_DGWStanNaPoczątku.Width = 106;
+            this.DGWStanNaPoczątku.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.DGWStanNaPoczątku.HeaderText = "Stan na początku";
+            this.DGWStanNaPoczątku.Name = "DGWStanNaPoczątku";
+            this.DGWStanNaPoczątku.ReadOnly = true;
+            this.DGWStanNaPoczątku.Width = 106;
             // 
-            // PB_DGWOdsetki
+            // DGWOdsetki
             // 
-            this.PB_DGWOdsetki.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.PB_DGWOdsetki.HeaderText = "Naliczone odsetki";
-            this.PB_DGWOdsetki.Name = "PB_DGWOdsetki";
-            this.PB_DGWOdsetki.ReadOnly = true;
-            this.PB_DGWOdsetki.Width = 106;
+            this.DGWOdsetki.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.DGWOdsetki.HeaderText = "Naliczone odsetki";
+            this.DGWOdsetki.Name = "DGWOdsetki";
+            this.DGWOdsetki.ReadOnly = true;
+            this.DGWOdsetki.Width = 106;
             // 
-            // PB_DGWStanKontaNaKońcu
+            // DGWStanKontaNaKońcu
             // 
-            this.PB_DGWStanKontaNaKońcu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.PB_DGWStanKontaNaKońcu.HeaderText = "Stan konta na końcu okresu";
-            this.PB_DGWStanKontaNaKońcu.Name = "PB_DGWStanKontaNaKońcu";
-            this.PB_DGWStanKontaNaKońcu.ReadOnly = true;
-            this.PB_DGWStanKontaNaKońcu.Width = 123;
+            this.DGWStanKontaNaKońcu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.DGWStanKontaNaKońcu.HeaderText = "Stan konta na końcu okresu";
+            this.DGWStanKontaNaKońcu.Name = "DGWStanKontaNaKońcu";
+            this.DGWStanKontaNaKońcu.ReadOnly = true;
+            this.DGWStanKontaNaKońcu.Width = 123;
             // 
-            // PB_WykresLokata
+            // WykresLokata
             // 
             chartArea1.Name = "ChartArea1";
-            this.PB_WykresLokata.ChartAreas.Add(chartArea1);
+            this.WykresLokata.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.PB_WykresLokata.Legends.Add(legend1);
-            this.PB_WykresLokata.Location = new System.Drawing.Point(152, 64);
-            this.PB_WykresLokata.Name = "PB_WykresLokata";
+            this.WykresLokata.Legends.Add(legend1);
+            this.WykresLokata.Location = new System.Drawing.Point(152, 64);
+            this.WykresLokata.Name = "WykresLokata";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            this.PB_WykresLokata.Series.Add(series1);
-            this.PB_WykresLokata.Size = new System.Drawing.Size(453, 386);
-            this.PB_WykresLokata.TabIndex = 28;
-            this.PB_WykresLokata.Text = "chart1";
-            this.PB_WykresLokata.Visible = false;
+            this.WykresLokata.Series.Add(series1);
+            this.WykresLokata.Size = new System.Drawing.Size(453, 386);
+            this.WykresLokata.TabIndex = 28;
+            this.WykresLokata.Text = "chart1";
+            this.WykresLokata.Visible = false;
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // PB_GrubośćLiniiWykresu
+            // GrubośćLiniiWykresu
             // 
-            this.PB_GrubośćLiniiWykresu.Location = new System.Drawing.Point(12, 318);
-            this.PB_GrubośćLiniiWykresu.Maximum = 5;
-            this.PB_GrubośćLiniiWykresu.Minimum = 1;
-            this.PB_GrubośćLiniiWykresu.Name = "PB_GrubośćLiniiWykresu";
-            this.PB_GrubośćLiniiWykresu.Size = new System.Drawing.Size(104, 45);
-            this.PB_GrubośćLiniiWykresu.TabIndex = 29;
-            this.PB_GrubośćLiniiWykresu.Value = 1;
-            this.PB_GrubośćLiniiWykresu.Scroll += new System.EventHandler(this.PB_GrubośćLiniiWykresu_Scroll);
+            this.GrubośćLiniiWykresu.Location = new System.Drawing.Point(12, 318);
+            this.GrubośćLiniiWykresu.Maximum = 5;
+            this.GrubośćLiniiWykresu.Minimum = 1;
+            this.GrubośćLiniiWykresu.Name = "GrubośćLiniiWykresu";
+            this.GrubośćLiniiWykresu.Size = new System.Drawing.Size(104, 45);
+            this.GrubośćLiniiWykresu.TabIndex = 29;
+            this.GrubośćLiniiWykresu.Value = 1;
+            this.GrubośćLiniiWykresu.Scroll += new System.EventHandler(this.GrubośćLiniiWykresu_Scroll);
             // 
-            // PB_InfoSN
+            // InfoSN
             // 
-            this.PB_InfoSN.AutoSize = true;
-            this.PB_InfoSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.PB_InfoSN.Location = new System.Drawing.Point(19, 347);
-            this.PB_InfoSN.Name = "PB_InfoSN";
-            this.PB_InfoSN.Size = new System.Drawing.Size(91, 13);
-            this.PB_InfoSN.TabIndex = 30;
-            this.PB_InfoSN.Text = "1    2     3    4     5";
+            this.InfoSN.AutoSize = true;
+            this.InfoSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.InfoSN.Location = new System.Drawing.Point(19, 347);
+            this.InfoSN.Name = "InfoSN";
+            this.InfoSN.Size = new System.Drawing.Size(91, 13);
+            this.InfoSN.TabIndex = 30;
+            this.InfoSN.Text = "1    2     3    4     5";
             // 
-            // PB_Lokaty
+            // Lokaty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 462);
-            this.Controls.Add(this.PB_InfoSN);
-            this.Controls.Add(this.PB_InfoGrubośćLinii);
-            this.Controls.Add(this.PB_GrubośćLiniiWykresu);
-            this.Controls.Add(this.PB_WykresLokata);
-            this.Controls.Add(this.PB_TabelarycznaPrezentacjaLokaty);
-            this.Controls.Add(this.PB_Obrazek);
-            this.Controls.Add(this.PB_PrzejdźDoKredyty);
-            this.Controls.Add(this.PB_GraficznaPrezentacjaLokaty);
-            this.Controls.Add(this.PB_TabelaryczneRozliczenieLokaty);
-            this.Controls.Add(this.PB_ObliczStanKonta);
-            this.Controls.Add(this.PB_PSK_wyświetl);
-            this.Controls.Add(this.PB_InfoSK);
-            this.Controls.Add(this.PB_RodzajWykresu);
-            this.Controls.Add(this.PB_InfoRodzajWykresu);
-            this.Controls.Add(this.PB_StylLiniiWykresu);
-            this.Controls.Add(this.PB_InfoStylLinii);
-            this.Controls.Add(this.PB_KolorTłaWykresu);
-            this.Controls.Add(this.PB_InfoKolorWykresu);
-            this.Controls.Add(this.PB_WybierzKolorTłaWykresu);
-            this.Controls.Add(this.PB_KolorLiniiWykresu);
-            this.Controls.Add(this.PB_InfoKolorLinii);
-            this.Controls.Add(this._PB_WybierzKolorLiniiWykresu);
-            this.Controls.Add(this.PB_CzasNaliczaniaLokaty);
-            this.Controls.Add(this.PB_InfoOkres);
-            this.Controls.Add(this.PB_Oprocentowanie);
-            this.Controls.Add(this.PB_InfoOprocentowanie);
-            this.Controls.Add(this.PB_KwotaLokaty);
-            this.Controls.Add(this.PB_InfoKwota);
-            this.Controls.Add(this.PB_InfoNL);
-            this.Controls.Add(this.PB_MenuLokaty);
-            this.MainMenuStrip = this.PB_MenuLokaty;
-            this.Name = "PB_Lokaty";
+            this.Controls.Add(this.InfoSN);
+            this.Controls.Add(this.InfoGrubośćLinii);
+            this.Controls.Add(this.GrubośćLiniiWykresu);
+            this.Controls.Add(this.WykresLokata);
+            this.Controls.Add(this.TabelarycznaPrezentacjaLokaty);
+            this.Controls.Add(this.Obrazek);
+            this.Controls.Add(this.PrzejdźDoKredyty);
+            this.Controls.Add(this.GraficznaPrezentacjaLokaty);
+            this.Controls.Add(this.TabelaryczneRozliczenieLokaty);
+            this.Controls.Add(this.ObliczStanKonta);
+            this.Controls.Add(this.PSK_wyświetl);
+            this.Controls.Add(this.InfoSK);
+            this.Controls.Add(this.RodzajWykresu);
+            this.Controls.Add(this.InfoRodzajWykresu);
+            this.Controls.Add(this.StylLiniiWykresu);
+            this.Controls.Add(this.InfoStylLinii);
+            this.Controls.Add(this.KolorTłaWykresu);
+            this.Controls.Add(this.InfoKolorWykresu);
+            this.Controls.Add(this.WybierzKolorTłaWykresu);
+            this.Controls.Add(this.KolorLiniiWykresu);
+            this.Controls.Add(this.InfoKolorLinii);
+            this.Controls.Add(this._WybierzKolorLiniiWykresu);
+            this.Controls.Add(this.CzasNaliczaniaLokaty);
+            this.Controls.Add(this.InfoOkres);
+            this.Controls.Add(this.Oprocentowanie);
+            this.Controls.Add(this.InfoOprocentowanie);
+            this.Controls.Add(this.KwotaLokaty);
+            this.Controls.Add(this.InfoKwota);
+            this.Controls.Add(this.InfoNL);
+            this.Controls.Add(this.MenuLokaty);
+            this.MainMenuStrip = this.MenuLokaty;
+            this.Name = "Lokaty";
             this.Text = "Lokata Kapitałowa";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PB_Lokaty_FormClosing);
-            this.PB_MenuLokaty.ResumeLayout(false);
-            this.PB_MenuLokaty.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_Obrazek)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_TabelarycznaPrezentacjaLokaty)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_WykresLokata)).EndInit();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Lokaty_FormClosing);
+            this.MenuLokaty.ResumeLayout(false);
+            this.MenuLokaty.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Obrazek)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TabelarycznaPrezentacjaLokaty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WykresLokata)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_GrubośćLiniiWykresu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GrubośćLiniiWykresu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -577,41 +577,41 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip PB_MenuLokaty;
-        private System.Windows.Forms.ToolStripMenuItem PB_LokatyFile;
-        private System.Windows.Forms.ToolStripMenuItem PB_LokatyZTW;
-        private System.Windows.Forms.Label PB_InfoNL;
-        private System.Windows.Forms.Label PB_InfoKwota;
-        private System.Windows.Forms.TextBox PB_KwotaLokaty;
-        private System.Windows.Forms.Label PB_InfoOprocentowanie;
-        private System.Windows.Forms.ComboBox PB_Oprocentowanie;
-        private System.Windows.Forms.Label PB_InfoOkres;
-        private System.Windows.Forms.TextBox PB_CzasNaliczaniaLokaty;
-        private System.Windows.Forms.Button _PB_WybierzKolorLiniiWykresu;
-        private System.Windows.Forms.Label PB_InfoKolorLinii;
-        private System.Windows.Forms.TextBox PB_KolorLiniiWykresu;
-        private System.Windows.Forms.Button PB_WybierzKolorTłaWykresu;
-        private System.Windows.Forms.Label PB_InfoKolorWykresu;
-        private System.Windows.Forms.TextBox PB_KolorTłaWykresu;
-        private System.Windows.Forms.Label PB_InfoGrubośćLinii;
-        private System.Windows.Forms.Label PB_InfoStylLinii;
-        private System.Windows.Forms.ComboBox PB_StylLiniiWykresu;
-        private System.Windows.Forms.Label PB_InfoRodzajWykresu;
-        private System.Windows.Forms.ComboBox PB_RodzajWykresu;
-        private System.Windows.Forms.Label PB_InfoSK;
-        private System.Windows.Forms.TextBox PB_PSK_wyświetl;
-        private System.Windows.Forms.Button PB_ObliczStanKonta;
-        private System.Windows.Forms.Button PB_TabelaryczneRozliczenieLokaty;
-        private System.Windows.Forms.Button PB_GraficznaPrezentacjaLokaty;
-        private System.Windows.Forms.Button PB_PrzejdźDoKredyty;
-        private System.Windows.Forms.PictureBox PB_Obrazek;
-        private System.Windows.Forms.DataGridView PB_TabelarycznaPrezentacjaLokaty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PB_DGW_OkresLokaty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PB_DGWStanNaPoczątku;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PB_DGWOdsetki;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PB_DGWStanKontaNaKońcu;
+        private System.Windows.Forms.MenuStrip MenuLokaty;
+        private System.Windows.Forms.ToolStripMenuItem LokatyFile;
+        private System.Windows.Forms.ToolStripMenuItem LokatyZTW;
+        private System.Windows.Forms.Label InfoNL;
+        private System.Windows.Forms.Label InfoKwota;
+        private System.Windows.Forms.TextBox KwotaLokaty;
+        private System.Windows.Forms.Label InfoOprocentowanie;
+        private System.Windows.Forms.ComboBox Oprocentowanie;
+        private System.Windows.Forms.Label InfoOkres;
+        private System.Windows.Forms.TextBox CzasNaliczaniaLokaty;
+        private System.Windows.Forms.Button _WybierzKolorLiniiWykresu;
+        private System.Windows.Forms.Label InfoKolorLinii;
+        private System.Windows.Forms.TextBox KolorLiniiWykresu;
+        private System.Windows.Forms.Button WybierzKolorTłaWykresu;
+        private System.Windows.Forms.Label InfoKolorWykresu;
+        private System.Windows.Forms.TextBox KolorTłaWykresu;
+        private System.Windows.Forms.Label InfoGrubośćLinii;
+        private System.Windows.Forms.Label InfoStylLinii;
+        private System.Windows.Forms.ComboBox StylLiniiWykresu;
+        private System.Windows.Forms.Label InfoRodzajWykresu;
+        private System.Windows.Forms.ComboBox RodzajWykresu;
+        private System.Windows.Forms.Label InfoSK;
+        private System.Windows.Forms.TextBox PSK_wyświetl;
+        private System.Windows.Forms.Button ObliczStanKonta;
+        private System.Windows.Forms.Button TabelaryczneRozliczenieLokaty;
+        private System.Windows.Forms.Button GraficznaPrezentacjaLokaty;
+        private System.Windows.Forms.Button PrzejdźDoKredyty;
+        private System.Windows.Forms.PictureBox Obrazek;
+        private System.Windows.Forms.DataGridView TabelarycznaPrezentacjaLokaty;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DGW_OkresLokaty;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DGWStanNaPoczątku;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DGWOdsetki;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DGWStanKontaNaKońcu;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.DataVisualization.Charting.Chart PB_WykresLokata;
+        private System.Windows.Forms.DataVisualization.Charting.Chart WykresLokata;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ToolStripMenuItem lineToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem barToolStripMenuItem;
@@ -620,7 +620,7 @@
         private System.Windows.Forms.ToolStripMenuItem radarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rangeBarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stepLineToolStripMenuItem;
-        private System.Windows.Forms.TrackBar PB_GrubośćLiniiWykresu;
-        private System.Windows.Forms.Label PB_InfoSN;
+        private System.Windows.Forms.TrackBar GrubośćLiniiWykresu;
+        private System.Windows.Forms.Label InfoSN;
     }
 }

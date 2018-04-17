@@ -1,6 +1,6 @@
 ﻿namespace Lokaty_Kredyty
 {
-    partial class PB_Kredyty
+    partial class Kredyty
     {
         /// <summary>
         /// Required designer variable.
@@ -33,38 +33,38 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.PB_ZakładkaRozliczenieSpłatyKredytu = new System.Windows.Forms.TabPage();
-            this.PB_InfoProcent = new System.Windows.Forms.Label();
-            this.PB_GraficznaPrezentacjaRat = new System.Windows.Forms.Button();
-            this.PB_TabelarycznaPrezentacjaRat = new System.Windows.Forms.Button();
-            this.PB_SposóbNaliczaniaRat = new System.Windows.Forms.GroupBox();
-            this.PB_Rosnące = new System.Windows.Forms.RadioButton();
-            this.PB_Malejące = new System.Windows.Forms.RadioButton();
-            this.PB_Stałe = new System.Windows.Forms.RadioButton();
-            this.PB_OkresNaliczaniaOdsetek = new System.Windows.Forms.GroupBox();
-            this.PB_CoMiesiąc = new System.Windows.Forms.RadioButton();
-            this.PB_CoKwartał = new System.Windows.Forms.RadioButton();
-            this.PB_CoPółRoku = new System.Windows.Forms.RadioButton();
-            this.PB_RazNaRok = new System.Windows.Forms.RadioButton();
-            this.PB_StopaProcentowa = new System.Windows.Forms.ComboBox();
-            this.PB_SP = new System.Windows.Forms.Label();
-            this.PB_OkresSpłaty = new System.Windows.Forms.TextBox();
-            this.PB_KwotaKredytu = new System.Windows.Forms.TextBox();
-            this.PB_OS = new System.Windows.Forms.Label();
-            this.PB_WK = new System.Windows.Forms.Label();
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu = new System.Windows.Forms.TabPage();
-            this.PB_InfoWysokośćRatyKapitałowej = new System.Windows.Forms.TextBox();
-            this.PB_Separator = new System.Windows.Forms.TextBox();
-            this.PB_Tabela = new System.Windows.Forms.DataGridView();
-            this.PB_NumerRaty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PB_RataŁączna = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PB_RataOdsetkowa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PB_ZadłużeniePoWpłaceniuRaty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PB_InfoSeparator = new System.Windows.Forms.Label();
-            this.PB_WRInfo = new System.Windows.Forms.Label();
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu = new System.Windows.Forms.TabPage();
-            this.PB_Wykres = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.PB_FormatowanieWykresu = new System.Windows.Forms.MenuStrip();
+            this.ZakładkaRozliczenieSpłatyKredytu = new System.Windows.Forms.TabPage();
+            this.InfoProcent = new System.Windows.Forms.Label();
+            this.GraficznaPrezentacjaRat = new System.Windows.Forms.Button();
+            this.TabelarycznaPrezentacjaRat = new System.Windows.Forms.Button();
+            this.SposóbNaliczaniaRat = new System.Windows.Forms.GroupBox();
+            this.Rosnące = new System.Windows.Forms.RadioButton();
+            this.Malejące = new System.Windows.Forms.RadioButton();
+            this.Stałe = new System.Windows.Forms.RadioButton();
+            this.OkresNaliczaniaOdsetek = new System.Windows.Forms.GroupBox();
+            this.CoMiesiąc = new System.Windows.Forms.RadioButton();
+            this.CoKwartał = new System.Windows.Forms.RadioButton();
+            this.CoPółRoku = new System.Windows.Forms.RadioButton();
+            this.RazNaRok = new System.Windows.Forms.RadioButton();
+            this.StopaProcentowa = new System.Windows.Forms.ComboBox();
+            this.SP = new System.Windows.Forms.Label();
+            this.OkresSpłaty = new System.Windows.Forms.TextBox();
+            this.KwotaKredytu = new System.Windows.Forms.TextBox();
+            this.OS = new System.Windows.Forms.Label();
+            this.WK = new System.Windows.Forms.Label();
+            this.ZakładkaTabelaryczneRozliczenieKredytu = new System.Windows.Forms.TabPage();
+            this.InfoWysokośćRatyKapitałowej = new System.Windows.Forms.TextBox();
+            this.Separator = new System.Windows.Forms.TextBox();
+            this.Tabela = new System.Windows.Forms.DataGridView();
+            this.NumerRaty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RataŁączna = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RataOdsetkowa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ZadłużeniePoWpłaceniuRaty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InfoSeparator = new System.Windows.Forms.Label();
+            this.WRInfo = new System.Windows.Forms.Label();
+            this.ZakładkaGraficznaPrezentacjaKredytu = new System.Windows.Forms.TabPage();
+            this.Wykres = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.FormatowanieWykresu = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.zmianaKoloruLiniiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.linia1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,201 +80,201 @@
             this.liniaKropkowaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.liniaKreskowokropkowaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kreskowoKropkowoKropkowaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PB_reset1 = new System.Windows.Forms.Button();
-            this.PB_PrzejdźDoLokaty = new System.Windows.Forms.Button();
+            this.reset1 = new System.Windows.Forms.Button();
+            this.PrzejdźDoLokaty = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.zamknięcieFormularzaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zapiszRozliczenieDoPlikuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wczytajRozliczenieZPlikuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.koniecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PB_WybórLiniiWykresu = new System.Windows.Forms.GroupBox();
-            this.PB_RataK = new System.Windows.Forms.RadioButton();
-            this.PB_RataO = new System.Windows.Forms.RadioButton();
-            this.PB_RataŁ = new System.Windows.Forms.RadioButton();
-            this.PB_KKinfo = new System.Windows.Forms.Label();
-            this.PB_SZInfo = new System.Windows.Forms.Label();
-            this.PB_KosztyKredytu = new System.Windows.Forms.TextBox();
-            this.PB_KońcoweZadłużenie = new System.Windows.Forms.TextBox();
+            this.WybórLiniiWykresu = new System.Windows.Forms.GroupBox();
+            this.RataK = new System.Windows.Forms.RadioButton();
+            this.RataO = new System.Windows.Forms.RadioButton();
+            this.RataŁ = new System.Windows.Forms.RadioButton();
+            this.KKinfo = new System.Windows.Forms.Label();
+            this.SZInfo = new System.Windows.Forms.Label();
+            this.KosztyKredytu = new System.Windows.Forms.TextBox();
+            this.KońcoweZadłużenie = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabControl1.SuspendLayout();
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.SuspendLayout();
-            this.PB_SposóbNaliczaniaRat.SuspendLayout();
-            this.PB_OkresNaliczaniaOdsetek.SuspendLayout();
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_Tabela)).BeginInit();
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_Wykres)).BeginInit();
-            this.PB_FormatowanieWykresu.SuspendLayout();
+            this.ZakładkaRozliczenieSpłatyKredytu.SuspendLayout();
+            this.SposóbNaliczaniaRat.SuspendLayout();
+            this.OkresNaliczaniaOdsetek.SuspendLayout();
+            this.ZakładkaTabelaryczneRozliczenieKredytu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Tabela)).BeginInit();
+            this.ZakładkaGraficznaPrezentacjaKredytu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Wykres)).BeginInit();
+            this.FormatowanieWykresu.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.PB_WybórLiniiWykresu.SuspendLayout();
+            this.WybórLiniiWykresu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.PB_ZakładkaRozliczenieSpłatyKredytu);
-            this.tabControl1.Controls.Add(this.PB_ZakładkaTabelaryczneRozliczenieKredytu);
-            this.tabControl1.Controls.Add(this.PB_ZakładkaGraficznaPrezentacjaKredytu);
+            this.tabControl1.Controls.Add(this.ZakładkaRozliczenieSpłatyKredytu);
+            this.tabControl1.Controls.Add(this.ZakładkaTabelaryczneRozliczenieKredytu);
+            this.tabControl1.Controls.Add(this.ZakładkaGraficznaPrezentacjaKredytu);
             this.tabControl1.Location = new System.Drawing.Point(-3, 27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(637, 439);
             this.tabControl1.TabIndex = 31;
             // 
-            // PB_ZakładkaRozliczenieSpłatyKredytu
+            // ZakładkaRozliczenieSpłatyKredytu
             // 
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.BackColor = System.Drawing.SystemColors.Control;
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.PB_InfoProcent);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.PB_GraficznaPrezentacjaRat);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.PB_TabelarycznaPrezentacjaRat);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.PB_SposóbNaliczaniaRat);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.PB_OkresNaliczaniaOdsetek);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.PB_StopaProcentowa);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.PB_SP);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.PB_OkresSpłaty);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.PB_KwotaKredytu);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.PB_OS);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.PB_WK);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Location = new System.Drawing.Point(4, 22);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Name = "PB_ZakładkaRozliczenieSpłatyKredytu";
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Padding = new System.Windows.Forms.Padding(3);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Size = new System.Drawing.Size(629, 413);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.TabIndex = 0;
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.Text = "Rozliczenie Spłaty Kredytu";
+            this.ZakładkaRozliczenieSpłatyKredytu.BackColor = System.Drawing.SystemColors.Control;
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.InfoProcent);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.GraficznaPrezentacjaRat);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.TabelarycznaPrezentacjaRat);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.SposóbNaliczaniaRat);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.OkresNaliczaniaOdsetek);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.StopaProcentowa);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.SP);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.OkresSpłaty);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.KwotaKredytu);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.OS);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.WK);
+            this.ZakładkaRozliczenieSpłatyKredytu.Location = new System.Drawing.Point(4, 22);
+            this.ZakładkaRozliczenieSpłatyKredytu.Name = "ZakładkaRozliczenieSpłatyKredytu";
+            this.ZakładkaRozliczenieSpłatyKredytu.Padding = new System.Windows.Forms.Padding(3);
+            this.ZakładkaRozliczenieSpłatyKredytu.Size = new System.Drawing.Size(629, 413);
+            this.ZakładkaRozliczenieSpłatyKredytu.TabIndex = 0;
+            this.ZakładkaRozliczenieSpłatyKredytu.Text = "Rozliczenie Spłaty Kredytu";
             // 
-            // PB_InfoProcent
+            // InfoProcent
             // 
-            this.PB_InfoProcent.AutoSize = true;
-            this.PB_InfoProcent.Location = new System.Drawing.Point(471, 92);
-            this.PB_InfoProcent.Name = "PB_InfoProcent";
-            this.PB_InfoProcent.Size = new System.Drawing.Size(15, 13);
-            this.PB_InfoProcent.TabIndex = 43;
-            this.PB_InfoProcent.Text = "%";
+            this.InfoProcent.AutoSize = true;
+            this.InfoProcent.Location = new System.Drawing.Point(471, 92);
+            this.InfoProcent.Name = "InfoProcent";
+            this.InfoProcent.Size = new System.Drawing.Size(15, 13);
+            this.InfoProcent.TabIndex = 43;
+            this.InfoProcent.Text = "%";
             // 
-            // PB_GraficznaPrezentacjaRat
+            // GraficznaPrezentacjaRat
             // 
-            this.PB_GraficznaPrezentacjaRat.Location = new System.Drawing.Point(189, 322);
-            this.PB_GraficznaPrezentacjaRat.Name = "PB_GraficznaPrezentacjaRat";
-            this.PB_GraficznaPrezentacjaRat.Size = new System.Drawing.Size(100, 50);
-            this.PB_GraficznaPrezentacjaRat.TabIndex = 42;
-            this.PB_GraficznaPrezentacjaRat.Text = "Graficzna prezentacja spłaty kredytu";
-            this.PB_GraficznaPrezentacjaRat.UseVisualStyleBackColor = true;
-            this.PB_GraficznaPrezentacjaRat.Click += new System.EventHandler(this.PB_GraficznaPrezentacjaRat_Click);
+            this.GraficznaPrezentacjaRat.Location = new System.Drawing.Point(189, 322);
+            this.GraficznaPrezentacjaRat.Name = "GraficznaPrezentacjaRat";
+            this.GraficznaPrezentacjaRat.Size = new System.Drawing.Size(100, 50);
+            this.GraficznaPrezentacjaRat.TabIndex = 42;
+            this.GraficznaPrezentacjaRat.Text = "Graficzna prezentacja spłaty kredytu";
+            this.GraficznaPrezentacjaRat.UseVisualStyleBackColor = true;
+            this.GraficznaPrezentacjaRat.Click += new System.EventHandler(this.GraficznaPrezentacjaRat_Click);
             // 
-            // PB_TabelarycznaPrezentacjaRat
+            // TabelarycznaPrezentacjaRat
             // 
-            this.PB_TabelarycznaPrezentacjaRat.Location = new System.Drawing.Point(59, 322);
-            this.PB_TabelarycznaPrezentacjaRat.Name = "PB_TabelarycznaPrezentacjaRat";
-            this.PB_TabelarycznaPrezentacjaRat.Size = new System.Drawing.Size(100, 50);
-            this.PB_TabelarycznaPrezentacjaRat.TabIndex = 41;
-            this.PB_TabelarycznaPrezentacjaRat.Text = "Tabelaryczna symulacja wysokości rat";
-            this.PB_TabelarycznaPrezentacjaRat.UseVisualStyleBackColor = true;
-            this.PB_TabelarycznaPrezentacjaRat.Click += new System.EventHandler(this.PB_TabelarycznaPrezentacjaRat_Click);
+            this.TabelarycznaPrezentacjaRat.Location = new System.Drawing.Point(59, 322);
+            this.TabelarycznaPrezentacjaRat.Name = "TabelarycznaPrezentacjaRat";
+            this.TabelarycznaPrezentacjaRat.Size = new System.Drawing.Size(100, 50);
+            this.TabelarycznaPrezentacjaRat.TabIndex = 41;
+            this.TabelarycznaPrezentacjaRat.Text = "Tabelaryczna symulacja wysokości rat";
+            this.TabelarycznaPrezentacjaRat.UseVisualStyleBackColor = true;
+            this.TabelarycznaPrezentacjaRat.Click += new System.EventHandler(this.TabelarycznaPrezentacjaRat_Click);
             // 
-            // PB_SposóbNaliczaniaRat
+            // SposóbNaliczaniaRat
             // 
-            this.PB_SposóbNaliczaniaRat.Controls.Add(this.PB_Rosnące);
-            this.PB_SposóbNaliczaniaRat.Controls.Add(this.PB_Malejące);
-            this.PB_SposóbNaliczaniaRat.Controls.Add(this.PB_Stałe);
-            this.PB_SposóbNaliczaniaRat.Location = new System.Drawing.Point(52, 237);
-            this.PB_SposóbNaliczaniaRat.Name = "PB_SposóbNaliczaniaRat";
-            this.PB_SposóbNaliczaniaRat.Size = new System.Drawing.Size(516, 52);
-            this.PB_SposóbNaliczaniaRat.TabIndex = 40;
-            this.PB_SposóbNaliczaniaRat.TabStop = false;
-            this.PB_SposóbNaliczaniaRat.Text = "Sposób naliczania rat:";
+            this.SposóbNaliczaniaRat.Controls.Add(this.Rosnące);
+            this.SposóbNaliczaniaRat.Controls.Add(this.Malejące);
+            this.SposóbNaliczaniaRat.Controls.Add(this.Stałe);
+            this.SposóbNaliczaniaRat.Location = new System.Drawing.Point(52, 237);
+            this.SposóbNaliczaniaRat.Name = "SposóbNaliczaniaRat";
+            this.SposóbNaliczaniaRat.Size = new System.Drawing.Size(516, 52);
+            this.SposóbNaliczaniaRat.TabIndex = 40;
+            this.SposóbNaliczaniaRat.TabStop = false;
+            this.SposóbNaliczaniaRat.Text = "Sposób naliczania rat:";
             // 
-            // PB_Rosnące
+            // Rosnące
             // 
-            this.PB_Rosnące.AutoSize = true;
-            this.PB_Rosnące.Location = new System.Drawing.Point(403, 19);
-            this.PB_Rosnące.Name = "PB_Rosnące";
-            this.PB_Rosnące.Size = new System.Drawing.Size(63, 17);
-            this.PB_Rosnące.TabIndex = 2;
-            this.PB_Rosnące.Text = "rosnące";
-            this.PB_Rosnące.UseVisualStyleBackColor = true;
+            this.Rosnące.AutoSize = true;
+            this.Rosnące.Location = new System.Drawing.Point(403, 19);
+            this.Rosnące.Name = "Rosnące";
+            this.Rosnące.Size = new System.Drawing.Size(63, 17);
+            this.Rosnące.TabIndex = 2;
+            this.Rosnące.Text = "rosnące";
+            this.Rosnące.UseVisualStyleBackColor = true;
             // 
-            // PB_Malejące
+            // Malejące
             // 
-            this.PB_Malejące.AutoSize = true;
-            this.PB_Malejące.Checked = true;
-            this.PB_Malejące.Location = new System.Drawing.Point(198, 19);
-            this.PB_Malejące.Name = "PB_Malejące";
-            this.PB_Malejące.Size = new System.Drawing.Size(67, 17);
-            this.PB_Malejące.TabIndex = 1;
-            this.PB_Malejące.TabStop = true;
-            this.PB_Malejące.Text = "malejące";
-            this.PB_Malejące.UseVisualStyleBackColor = true;
+            this.Malejące.AutoSize = true;
+            this.Malejące.Checked = true;
+            this.Malejące.Location = new System.Drawing.Point(198, 19);
+            this.Malejące.Name = "Malejące";
+            this.Malejące.Size = new System.Drawing.Size(67, 17);
+            this.Malejące.TabIndex = 1;
+            this.Malejące.TabStop = true;
+            this.Malejące.Text = "malejące";
+            this.Malejące.UseVisualStyleBackColor = true;
             // 
-            // PB_Stałe
+            // Stałe
             // 
-            this.PB_Stałe.AutoSize = true;
-            this.PB_Stałe.Location = new System.Drawing.Point(7, 19);
-            this.PB_Stałe.Name = "PB_Stałe";
-            this.PB_Stałe.Size = new System.Drawing.Size(49, 17);
-            this.PB_Stałe.TabIndex = 0;
-            this.PB_Stałe.Text = "stałe";
-            this.PB_Stałe.UseVisualStyleBackColor = true;
+            this.Stałe.AutoSize = true;
+            this.Stałe.Location = new System.Drawing.Point(7, 19);
+            this.Stałe.Name = "Stałe";
+            this.Stałe.Size = new System.Drawing.Size(49, 17);
+            this.Stałe.TabIndex = 0;
+            this.Stałe.Text = "stałe";
+            this.Stałe.UseVisualStyleBackColor = true;
             // 
-            // PB_OkresNaliczaniaOdsetek
+            // OkresNaliczaniaOdsetek
             // 
-            this.PB_OkresNaliczaniaOdsetek.Controls.Add(this.PB_CoMiesiąc);
-            this.PB_OkresNaliczaniaOdsetek.Controls.Add(this.PB_CoKwartał);
-            this.PB_OkresNaliczaniaOdsetek.Controls.Add(this.PB_CoPółRoku);
-            this.PB_OkresNaliczaniaOdsetek.Controls.Add(this.PB_RazNaRok);
-            this.PB_OkresNaliczaniaOdsetek.Location = new System.Drawing.Point(52, 178);
-            this.PB_OkresNaliczaniaOdsetek.Name = "PB_OkresNaliczaniaOdsetek";
-            this.PB_OkresNaliczaniaOdsetek.Size = new System.Drawing.Size(516, 53);
-            this.PB_OkresNaliczaniaOdsetek.TabIndex = 39;
-            this.PB_OkresNaliczaniaOdsetek.TabStop = false;
-            this.PB_OkresNaliczaniaOdsetek.Text = "Spłata raty:";
+            this.OkresNaliczaniaOdsetek.Controls.Add(this.CoMiesiąc);
+            this.OkresNaliczaniaOdsetek.Controls.Add(this.CoKwartał);
+            this.OkresNaliczaniaOdsetek.Controls.Add(this.CoPółRoku);
+            this.OkresNaliczaniaOdsetek.Controls.Add(this.RazNaRok);
+            this.OkresNaliczaniaOdsetek.Location = new System.Drawing.Point(52, 178);
+            this.OkresNaliczaniaOdsetek.Name = "OkresNaliczaniaOdsetek";
+            this.OkresNaliczaniaOdsetek.Size = new System.Drawing.Size(516, 53);
+            this.OkresNaliczaniaOdsetek.TabIndex = 39;
+            this.OkresNaliczaniaOdsetek.TabStop = false;
+            this.OkresNaliczaniaOdsetek.Text = "Spłata raty:";
             // 
-            // PB_CoMiesiąc
+            // CoMiesiąc
             // 
-            this.PB_CoMiesiąc.AutoSize = true;
-            this.PB_CoMiesiąc.Checked = true;
-            this.PB_CoMiesiąc.Location = new System.Drawing.Point(403, 20);
-            this.PB_CoMiesiąc.Name = "PB_CoMiesiąc";
-            this.PB_CoMiesiąc.Size = new System.Drawing.Size(77, 17);
-            this.PB_CoMiesiąc.TabIndex = 42;
-            this.PB_CoMiesiąc.TabStop = true;
-            this.PB_CoMiesiąc.Text = "Co Miesiąc";
-            this.PB_CoMiesiąc.UseVisualStyleBackColor = true;
+            this.CoMiesiąc.AutoSize = true;
+            this.CoMiesiąc.Checked = true;
+            this.CoMiesiąc.Location = new System.Drawing.Point(403, 20);
+            this.CoMiesiąc.Name = "CoMiesiąc";
+            this.CoMiesiąc.Size = new System.Drawing.Size(77, 17);
+            this.CoMiesiąc.TabIndex = 42;
+            this.CoMiesiąc.TabStop = true;
+            this.CoMiesiąc.Text = "Co Miesiąc";
+            this.CoMiesiąc.UseVisualStyleBackColor = true;
             // 
-            // PB_CoKwartał
+            // CoKwartał
             // 
-            this.PB_CoKwartał.AutoSize = true;
-            this.PB_CoKwartał.Location = new System.Drawing.Point(270, 20);
-            this.PB_CoKwartał.Name = "PB_CoKwartał";
-            this.PB_CoKwartał.Size = new System.Drawing.Size(78, 17);
-            this.PB_CoKwartał.TabIndex = 41;
-            this.PB_CoKwartał.Text = "Co Kwartał";
-            this.PB_CoKwartał.UseVisualStyleBackColor = true;
+            this.CoKwartał.AutoSize = true;
+            this.CoKwartał.Location = new System.Drawing.Point(270, 20);
+            this.CoKwartał.Name = "CoKwartał";
+            this.CoKwartał.Size = new System.Drawing.Size(78, 17);
+            this.CoKwartał.TabIndex = 41;
+            this.CoKwartał.Text = "Co Kwartał";
+            this.CoKwartał.UseVisualStyleBackColor = true;
             // 
-            // PB_CoPółRoku
+            // CoPółRoku
             // 
-            this.PB_CoPółRoku.AutoSize = true;
-            this.PB_CoPółRoku.Location = new System.Drawing.Point(137, 20);
-            this.PB_CoPółRoku.Name = "PB_CoPółRoku";
-            this.PB_CoPółRoku.Size = new System.Drawing.Size(81, 17);
-            this.PB_CoPółRoku.TabIndex = 40;
-            this.PB_CoPółRoku.Text = "Co pół roku";
-            this.PB_CoPółRoku.UseVisualStyleBackColor = true;
+            this.CoPółRoku.AutoSize = true;
+            this.CoPółRoku.Location = new System.Drawing.Point(137, 20);
+            this.CoPółRoku.Name = "CoPółRoku";
+            this.CoPółRoku.Size = new System.Drawing.Size(81, 17);
+            this.CoPółRoku.TabIndex = 40;
+            this.CoPółRoku.Text = "Co pół roku";
+            this.CoPółRoku.UseVisualStyleBackColor = true;
             // 
-            // PB_RazNaRok
+            // RazNaRok
             // 
-            this.PB_RazNaRok.AutoSize = true;
-            this.PB_RazNaRok.Location = new System.Drawing.Point(7, 20);
-            this.PB_RazNaRok.Name = "PB_RazNaRok";
-            this.PB_RazNaRok.Size = new System.Drawing.Size(79, 17);
-            this.PB_RazNaRok.TabIndex = 0;
-            this.PB_RazNaRok.Text = "Raz w roku";
-            this.PB_RazNaRok.UseVisualStyleBackColor = true;
+            this.RazNaRok.AutoSize = true;
+            this.RazNaRok.Location = new System.Drawing.Point(7, 20);
+            this.RazNaRok.Name = "RazNaRok";
+            this.RazNaRok.Size = new System.Drawing.Size(79, 17);
+            this.RazNaRok.TabIndex = 0;
+            this.RazNaRok.Text = "Raz w roku";
+            this.RazNaRok.UseVisualStyleBackColor = true;
             // 
-            // PB_StopaProcentowa
+            // StopaProcentowa
             // 
-            this.PB_StopaProcentowa.FormattingEnabled = true;
-            this.PB_StopaProcentowa.Items.AddRange(new object[] {
+            this.StopaProcentowa.FormattingEnabled = true;
+            this.StopaProcentowa.Items.AddRange(new object[] {
             "3,83",
             "0,03",
             "0,04",
@@ -294,191 +294,191 @@
             "0,18",
             "0,19",
             "0,20"});
-            this.PB_StopaProcentowa.Location = new System.Drawing.Point(393, 89);
-            this.PB_StopaProcentowa.Name = "PB_StopaProcentowa";
-            this.PB_StopaProcentowa.Size = new System.Drawing.Size(72, 21);
-            this.PB_StopaProcentowa.TabIndex = 38;
+            this.StopaProcentowa.Location = new System.Drawing.Point(393, 89);
+            this.StopaProcentowa.Name = "StopaProcentowa";
+            this.StopaProcentowa.Size = new System.Drawing.Size(72, 21);
+            this.StopaProcentowa.TabIndex = 38;
             // 
-            // PB_SP
+            // SP
             // 
-            this.PB_SP.AutoSize = true;
-            this.PB_SP.Location = new System.Drawing.Point(392, 73);
-            this.PB_SP.Name = "PB_SP";
-            this.PB_SP.Size = new System.Drawing.Size(94, 13);
-            this.PB_SP.TabIndex = 37;
-            this.PB_SP.Text = "Stopa procentowa";
+            this.SP.AutoSize = true;
+            this.SP.Location = new System.Drawing.Point(392, 73);
+            this.SP.Name = "SP";
+            this.SP.Size = new System.Drawing.Size(94, 13);
+            this.SP.TabIndex = 37;
+            this.SP.Text = "Stopa procentowa";
             // 
-            // PB_OkresSpłaty
+            // OkresSpłaty
             // 
-            this.PB_OkresSpłaty.Location = new System.Drawing.Point(135, 90);
-            this.PB_OkresSpłaty.Name = "PB_OkresSpłaty";
-            this.PB_OkresSpłaty.Size = new System.Drawing.Size(100, 20);
-            this.PB_OkresSpłaty.TabIndex = 36;
-            this.PB_OkresSpłaty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PB_OkresSpłaty_KeyPress);
+            this.OkresSpłaty.Location = new System.Drawing.Point(135, 90);
+            this.OkresSpłaty.Name = "OkresSpłaty";
+            this.OkresSpłaty.Size = new System.Drawing.Size(100, 20);
+            this.OkresSpłaty.TabIndex = 36;
+            this.OkresSpłaty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OkresSpłaty_KeyPress);
             // 
-            // PB_KwotaKredytu
+            // KwotaKredytu
             // 
-            this.PB_KwotaKredytu.Location = new System.Drawing.Point(135, 44);
-            this.PB_KwotaKredytu.Name = "PB_KwotaKredytu";
-            this.PB_KwotaKredytu.Size = new System.Drawing.Size(100, 20);
-            this.PB_KwotaKredytu.TabIndex = 35;
-            this.PB_KwotaKredytu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PB_KwotaKredytu_KeyPress);
+            this.KwotaKredytu.Location = new System.Drawing.Point(135, 44);
+            this.KwotaKredytu.Name = "KwotaKredytu";
+            this.KwotaKredytu.Size = new System.Drawing.Size(100, 20);
+            this.KwotaKredytu.TabIndex = 35;
+            this.KwotaKredytu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KwotaKredytu_KeyPress);
             // 
-            // PB_OS
+            // OS
             // 
-            this.PB_OS.AutoSize = true;
-            this.PB_OS.Location = new System.Drawing.Point(49, 97);
-            this.PB_OS.Name = "PB_OS";
-            this.PB_OS.Size = new System.Drawing.Size(67, 13);
-            this.PB_OS.TabIndex = 34;
-            this.PB_OS.Text = "Okres spłaty";
+            this.OS.AutoSize = true;
+            this.OS.Location = new System.Drawing.Point(49, 97);
+            this.OS.Name = "OS";
+            this.OS.Size = new System.Drawing.Size(67, 13);
+            this.OS.TabIndex = 34;
+            this.OS.Text = "Okres spłaty";
             // 
-            // PB_WK
+            // WK
             // 
-            this.PB_WK.AutoSize = true;
-            this.PB_WK.Location = new System.Drawing.Point(49, 47);
-            this.PB_WK.Name = "PB_WK";
-            this.PB_WK.Size = new System.Drawing.Size(75, 13);
-            this.PB_WK.TabIndex = 33;
-            this.PB_WK.Text = "Kwota kredytu";
+            this.WK.AutoSize = true;
+            this.WK.Location = new System.Drawing.Point(49, 47);
+            this.WK.Name = "WK";
+            this.WK.Size = new System.Drawing.Size(75, 13);
+            this.WK.TabIndex = 33;
+            this.WK.Text = "Kwota kredytu";
             // 
-            // PB_ZakładkaTabelaryczneRozliczenieKredytu
+            // ZakładkaTabelaryczneRozliczenieKredytu
             // 
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.BackColor = System.Drawing.SystemColors.Control;
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.Controls.Add(this.PB_InfoWysokośćRatyKapitałowej);
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.Controls.Add(this.PB_Separator);
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.Controls.Add(this.PB_Tabela);
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.Controls.Add(this.PB_InfoSeparator);
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.Controls.Add(this.PB_WRInfo);
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.Location = new System.Drawing.Point(4, 22);
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.Name = "PB_ZakładkaTabelaryczneRozliczenieKredytu";
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.Padding = new System.Windows.Forms.Padding(3);
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.Size = new System.Drawing.Size(629, 413);
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.TabIndex = 1;
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.Text = "Tabela Rozliczenia Kredytu";
+            this.ZakładkaTabelaryczneRozliczenieKredytu.BackColor = System.Drawing.SystemColors.Control;
+            this.ZakładkaTabelaryczneRozliczenieKredytu.Controls.Add(this.InfoWysokośćRatyKapitałowej);
+            this.ZakładkaTabelaryczneRozliczenieKredytu.Controls.Add(this.Separator);
+            this.ZakładkaTabelaryczneRozliczenieKredytu.Controls.Add(this.Tabela);
+            this.ZakładkaTabelaryczneRozliczenieKredytu.Controls.Add(this.InfoSeparator);
+            this.ZakładkaTabelaryczneRozliczenieKredytu.Controls.Add(this.WRInfo);
+            this.ZakładkaTabelaryczneRozliczenieKredytu.Location = new System.Drawing.Point(4, 22);
+            this.ZakładkaTabelaryczneRozliczenieKredytu.Name = "ZakładkaTabelaryczneRozliczenieKredytu";
+            this.ZakładkaTabelaryczneRozliczenieKredytu.Padding = new System.Windows.Forms.Padding(3);
+            this.ZakładkaTabelaryczneRozliczenieKredytu.Size = new System.Drawing.Size(629, 413);
+            this.ZakładkaTabelaryczneRozliczenieKredytu.TabIndex = 1;
+            this.ZakładkaTabelaryczneRozliczenieKredytu.Text = "Tabela Rozliczenia Kredytu";
             // 
-            // PB_InfoWysokośćRatyKapitałowej
+            // InfoWysokośćRatyKapitałowej
             // 
-            this.PB_InfoWysokośćRatyKapitałowej.Enabled = false;
-            this.PB_InfoWysokośćRatyKapitałowej.Location = new System.Drawing.Point(244, 45);
-            this.PB_InfoWysokośćRatyKapitałowej.Name = "PB_InfoWysokośćRatyKapitałowej";
-            this.PB_InfoWysokośćRatyKapitałowej.Size = new System.Drawing.Size(97, 20);
-            this.PB_InfoWysokośćRatyKapitałowej.TabIndex = 2;
-            this.PB_InfoWysokośćRatyKapitałowej.WordWrap = false;
+            this.InfoWysokośćRatyKapitałowej.Enabled = false;
+            this.InfoWysokośćRatyKapitałowej.Location = new System.Drawing.Point(244, 45);
+            this.InfoWysokośćRatyKapitałowej.Name = "InfoWysokośćRatyKapitałowej";
+            this.InfoWysokośćRatyKapitałowej.Size = new System.Drawing.Size(97, 20);
+            this.InfoWysokośćRatyKapitałowej.TabIndex = 2;
+            this.InfoWysokośćRatyKapitałowej.WordWrap = false;
             // 
-            // PB_Separator
+            // Separator
             // 
-            this.PB_Separator.Location = new System.Drawing.Point(452, 45);
-            this.PB_Separator.Name = "PB_Separator";
-            this.PB_Separator.Size = new System.Drawing.Size(19, 20);
-            this.PB_Separator.TabIndex = 41;
-            this.PB_Separator.Visible = false;
+            this.Separator.Location = new System.Drawing.Point(452, 45);
+            this.Separator.Name = "Separator";
+            this.Separator.Size = new System.Drawing.Size(19, 20);
+            this.Separator.TabIndex = 41;
+            this.Separator.Visible = false;
             // 
-            // PB_Tabela
+            // Tabela
             // 
-            this.PB_Tabela.AllowUserToAddRows = false;
-            this.PB_Tabela.AllowUserToDeleteRows = false;
-            this.PB_Tabela.AllowUserToResizeColumns = false;
-            this.PB_Tabela.AllowUserToResizeRows = false;
-            this.PB_Tabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PB_Tabela.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PB_NumerRaty,
-            this.PB_RataŁączna,
-            this.PB_RataOdsetkowa,
-            this.PB_ZadłużeniePoWpłaceniuRaty});
-            this.PB_Tabela.Location = new System.Drawing.Point(87, 86);
-            this.PB_Tabela.Name = "PB_Tabela";
-            this.PB_Tabela.ReadOnly = true;
-            this.PB_Tabela.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.PB_Tabela.Size = new System.Drawing.Size(444, 259);
-            this.PB_Tabela.TabIndex = 1;
-            this.PB_Tabela.Visible = false;
+            this.Tabela.AllowUserToAddRows = false;
+            this.Tabela.AllowUserToDeleteRows = false;
+            this.Tabela.AllowUserToResizeColumns = false;
+            this.Tabela.AllowUserToResizeRows = false;
+            this.Tabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Tabela.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NumerRaty,
+            this.RataŁączna,
+            this.RataOdsetkowa,
+            this.ZadłużeniePoWpłaceniuRaty});
+            this.Tabela.Location = new System.Drawing.Point(87, 86);
+            this.Tabela.Name = "Tabela";
+            this.Tabela.ReadOnly = true;
+            this.Tabela.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.Tabela.Size = new System.Drawing.Size(444, 259);
+            this.Tabela.TabIndex = 1;
+            this.Tabela.Visible = false;
             // 
-            // PB_NumerRaty
+            // NumerRaty
             // 
-            this.PB_NumerRaty.HeaderText = "Nr Raty";
-            this.PB_NumerRaty.Name = "PB_NumerRaty";
-            this.PB_NumerRaty.ReadOnly = true;
+            this.NumerRaty.HeaderText = "Nr Raty";
+            this.NumerRaty.Name = "NumerRaty";
+            this.NumerRaty.ReadOnly = true;
             // 
-            // PB_RataŁączna
+            // RataŁączna
             // 
-            this.PB_RataŁączna.HeaderText = "Wysokość raty łącznej";
-            this.PB_RataŁączna.Name = "PB_RataŁączna";
-            this.PB_RataŁączna.ReadOnly = true;
+            this.RataŁączna.HeaderText = "Wysokość raty łącznej";
+            this.RataŁączna.Name = "RataŁączna";
+            this.RataŁączna.ReadOnly = true;
             // 
-            // PB_RataOdsetkowa
+            // RataOdsetkowa
             // 
-            this.PB_RataOdsetkowa.HeaderText = "Wysokość raty Odsetkowej";
-            this.PB_RataOdsetkowa.Name = "PB_RataOdsetkowa";
-            this.PB_RataOdsetkowa.ReadOnly = true;
+            this.RataOdsetkowa.HeaderText = "Wysokość raty Odsetkowej";
+            this.RataOdsetkowa.Name = "RataOdsetkowa";
+            this.RataOdsetkowa.ReadOnly = true;
             // 
-            // PB_ZadłużeniePoWpłaceniuRaty
+            // ZadłużeniePoWpłaceniuRaty
             // 
-            this.PB_ZadłużeniePoWpłaceniuRaty.HeaderText = "Zadłużenie po wpłaceniu raty";
-            this.PB_ZadłużeniePoWpłaceniuRaty.Name = "PB_ZadłużeniePoWpłaceniuRaty";
-            this.PB_ZadłużeniePoWpłaceniuRaty.ReadOnly = true;
+            this.ZadłużeniePoWpłaceniuRaty.HeaderText = "Zadłużenie po wpłaceniu raty";
+            this.ZadłużeniePoWpłaceniuRaty.Name = "ZadłużeniePoWpłaceniuRaty";
+            this.ZadłużeniePoWpłaceniuRaty.ReadOnly = true;
             // 
-            // PB_InfoSeparator
+            // InfoSeparator
             // 
-            this.PB_InfoSeparator.AutoSize = true;
-            this.PB_InfoSeparator.BackColor = System.Drawing.SystemColors.Control;
-            this.PB_InfoSeparator.Location = new System.Drawing.Point(393, 50);
-            this.PB_InfoSeparator.Name = "PB_InfoSeparator";
-            this.PB_InfoSeparator.Size = new System.Drawing.Size(53, 13);
-            this.PB_InfoSeparator.TabIndex = 42;
-            this.PB_InfoSeparator.Text = "Separator";
-            this.PB_InfoSeparator.Visible = false;
+            this.InfoSeparator.AutoSize = true;
+            this.InfoSeparator.BackColor = System.Drawing.SystemColors.Control;
+            this.InfoSeparator.Location = new System.Drawing.Point(393, 50);
+            this.InfoSeparator.Name = "InfoSeparator";
+            this.InfoSeparator.Size = new System.Drawing.Size(53, 13);
+            this.InfoSeparator.TabIndex = 42;
+            this.InfoSeparator.Text = "Separator";
+            this.InfoSeparator.Visible = false;
             // 
-            // PB_WRInfo
+            // WRInfo
             // 
-            this.PB_WRInfo.AutoSize = true;
-            this.PB_WRInfo.Location = new System.Drawing.Point(84, 50);
-            this.PB_WRInfo.Name = "PB_WRInfo";
-            this.PB_WRInfo.Size = new System.Drawing.Size(154, 13);
-            this.PB_WRInfo.TabIndex = 0;
-            this.PB_WRInfo.Text = "Stała wartość raty kapitałowej:";
-            this.PB_WRInfo.Visible = false;
+            this.WRInfo.AutoSize = true;
+            this.WRInfo.Location = new System.Drawing.Point(84, 50);
+            this.WRInfo.Name = "WRInfo";
+            this.WRInfo.Size = new System.Drawing.Size(154, 13);
+            this.WRInfo.TabIndex = 0;
+            this.WRInfo.Text = "Stała wartość raty kapitałowej:";
+            this.WRInfo.Visible = false;
             // 
-            // PB_ZakładkaGraficznaPrezentacjaKredytu
+            // ZakładkaGraficznaPrezentacjaKredytu
             // 
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu.BackColor = System.Drawing.SystemColors.Control;
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu.Controls.Add(this.PB_Wykres);
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu.Controls.Add(this.PB_FormatowanieWykresu);
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu.Location = new System.Drawing.Point(4, 22);
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu.Name = "PB_ZakładkaGraficznaPrezentacjaKredytu";
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu.Padding = new System.Windows.Forms.Padding(3);
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu.Size = new System.Drawing.Size(629, 413);
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu.TabIndex = 2;
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu.Text = "Wykresy";
+            this.ZakładkaGraficznaPrezentacjaKredytu.BackColor = System.Drawing.SystemColors.Control;
+            this.ZakładkaGraficznaPrezentacjaKredytu.Controls.Add(this.Wykres);
+            this.ZakładkaGraficznaPrezentacjaKredytu.Controls.Add(this.FormatowanieWykresu);
+            this.ZakładkaGraficznaPrezentacjaKredytu.Location = new System.Drawing.Point(4, 22);
+            this.ZakładkaGraficznaPrezentacjaKredytu.Name = "ZakładkaGraficznaPrezentacjaKredytu";
+            this.ZakładkaGraficznaPrezentacjaKredytu.Padding = new System.Windows.Forms.Padding(3);
+            this.ZakładkaGraficznaPrezentacjaKredytu.Size = new System.Drawing.Size(629, 413);
+            this.ZakładkaGraficznaPrezentacjaKredytu.TabIndex = 2;
+            this.ZakładkaGraficznaPrezentacjaKredytu.Text = "Wykresy";
             // 
-            // PB_Wykres
+            // Wykres
             // 
             chartArea1.Name = "ChartArea1";
-            this.PB_Wykres.ChartAreas.Add(chartArea1);
+            this.Wykres.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.PB_Wykres.Legends.Add(legend1);
-            this.PB_Wykres.Location = new System.Drawing.Point(6, 25);
-            this.PB_Wykres.Name = "PB_Wykres";
+            this.Wykres.Legends.Add(legend1);
+            this.Wykres.Location = new System.Drawing.Point(6, 25);
+            this.Wykres.Name = "Wykres";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            this.PB_Wykres.Series.Add(series1);
-            this.PB_Wykres.Size = new System.Drawing.Size(612, 371);
-            this.PB_Wykres.TabIndex = 2;
-            this.PB_Wykres.Text = "chart1";
-            this.PB_Wykres.Visible = false;
+            this.Wykres.Series.Add(series1);
+            this.Wykres.Size = new System.Drawing.Size(612, 371);
+            this.Wykres.TabIndex = 2;
+            this.Wykres.Text = "chart1";
+            this.Wykres.Visible = false;
             // 
-            // PB_FormatowanieWykresu
+            // FormatowanieWykresu
             // 
-            this.PB_FormatowanieWykresu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FormatowanieWykresu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem2,
             this.zmianaGrubościLiniiToolStripMenuItem,
             this.zmianaStyluLiniiToolStripMenuItem});
-            this.PB_FormatowanieWykresu.Location = new System.Drawing.Point(3, 3);
-            this.PB_FormatowanieWykresu.Name = "PB_FormatowanieWykresu";
-            this.PB_FormatowanieWykresu.Size = new System.Drawing.Size(623, 24);
-            this.PB_FormatowanieWykresu.TabIndex = 0;
-            this.PB_FormatowanieWykresu.Text = "menuStrip2";
+            this.FormatowanieWykresu.Location = new System.Drawing.Point(3, 3);
+            this.FormatowanieWykresu.Name = "FormatowanieWykresu";
+            this.FormatowanieWykresu.Size = new System.Drawing.Size(623, 24);
+            this.FormatowanieWykresu.TabIndex = 0;
+            this.FormatowanieWykresu.Text = "menuStrip2";
             // 
             // toolStripMenuItem2
             // 
@@ -504,28 +504,28 @@
             this.linia1ToolStripMenuItem.Name = "linia1ToolStripMenuItem";
             this.linia1ToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.linia1ToolStripMenuItem.Text = "Rata Łączna";
-            this.linia1ToolStripMenuItem.Click += new System.EventHandler(this.linia1ToolStripMenuItem_Click);
+            this.linia1ToolStripMenuItem.Click += new System.EventHandler(this.Linia1ToolStripMenuItem_Click);
             // 
             // linia2ToolStripMenuItem
             // 
             this.linia2ToolStripMenuItem.Name = "linia2ToolStripMenuItem";
             this.linia2ToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.linia2ToolStripMenuItem.Text = "Rata Odsetkowa";
-            this.linia2ToolStripMenuItem.Click += new System.EventHandler(this.linia2ToolStripMenuItem_Click);
+            this.linia2ToolStripMenuItem.Click += new System.EventHandler(this.Linia2ToolStripMenuItem_Click);
             // 
             // linia3ToolStripMenuItem
             // 
             this.linia3ToolStripMenuItem.Name = "linia3ToolStripMenuItem";
             this.linia3ToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.linia3ToolStripMenuItem.Text = "Rata Kapitałowa";
-            this.linia3ToolStripMenuItem.Click += new System.EventHandler(this.linia3ToolStripMenuItem_Click);
+            this.linia3ToolStripMenuItem.Click += new System.EventHandler(this.Linia3ToolStripMenuItem_Click);
             // 
             // zmianaKoloruTłaToolStripMenuItem
             // 
             this.zmianaKoloruTłaToolStripMenuItem.Name = "zmianaKoloruTłaToolStripMenuItem";
             this.zmianaKoloruTłaToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.zmianaKoloruTłaToolStripMenuItem.Text = "Zmiana koloru tła";
-            this.zmianaKoloruTłaToolStripMenuItem.Click += new System.EventHandler(this.zmianaKoloruTłaToolStripMenuItem_Click);
+            this.zmianaKoloruTłaToolStripMenuItem.Click += new System.EventHandler(this.ZmianaKoloruTłaToolStripMenuItem_Click);
             // 
             // zmianaGrubościLiniiToolStripMenuItem
             // 
@@ -541,14 +541,14 @@
             this.zwiększenieGrubościToolStripMenuItem.Name = "zwiększenieGrubościToolStripMenuItem";
             this.zwiększenieGrubościToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.zwiększenieGrubościToolStripMenuItem.Text = "Zwiększenie grubości";
-            this.zwiększenieGrubościToolStripMenuItem.Click += new System.EventHandler(this.zwiększenieGrubościToolStripMenuItem_Click);
+            this.zwiększenieGrubościToolStripMenuItem.Click += new System.EventHandler(this.ZwiększenieGrubościToolStripMenuItem_Click);
             // 
             // zmniejszenieGrubościToolStripMenuItem
             // 
             this.zmniejszenieGrubościToolStripMenuItem.Name = "zmniejszenieGrubościToolStripMenuItem";
             this.zmniejszenieGrubościToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.zmniejszenieGrubościToolStripMenuItem.Text = "Zmniejszenie grubości";
-            this.zmniejszenieGrubościToolStripMenuItem.Click += new System.EventHandler(this.zmniejszenieGrubościToolStripMenuItem_Click);
+            this.zmniejszenieGrubościToolStripMenuItem.Click += new System.EventHandler(this.ZmniejszenieGrubościToolStripMenuItem_Click);
             // 
             // zmianaStyluLiniiToolStripMenuItem
             // 
@@ -574,51 +574,51 @@
             this.liniaKreskowaToolStripMenuItem.Name = "liniaKreskowaToolStripMenuItem";
             this.liniaKreskowaToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.liniaKreskowaToolStripMenuItem.Text = "Kreskowa";
-            this.liniaKreskowaToolStripMenuItem.Click += new System.EventHandler(this.liniaKreskowaToolStripMenuItem_Click);
+            this.liniaKreskowaToolStripMenuItem.Click += new System.EventHandler(this.LiniaKreskowaToolStripMenuItem_Click);
             // 
             // liniaKropkowaToolStripMenuItem
             // 
             this.liniaKropkowaToolStripMenuItem.Name = "liniaKropkowaToolStripMenuItem";
             this.liniaKropkowaToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.liniaKropkowaToolStripMenuItem.Text = "Kropkowa";
-            this.liniaKropkowaToolStripMenuItem.Click += new System.EventHandler(this.liniaKropkowaToolStripMenuItem_Click);
+            this.liniaKropkowaToolStripMenuItem.Click += new System.EventHandler(this.LiniaKropkowaToolStripMenuItem_Click);
             // 
             // liniaKreskowokropkowaToolStripMenuItem
             // 
             this.liniaKreskowokropkowaToolStripMenuItem.Name = "liniaKreskowokropkowaToolStripMenuItem";
             this.liniaKreskowokropkowaToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.liniaKreskowokropkowaToolStripMenuItem.Text = "Kreskowo-Kropkowa";
-            this.liniaKreskowokropkowaToolStripMenuItem.Click += new System.EventHandler(this.liniaKreskowokropkowaToolStripMenuItem_Click);
+            this.liniaKreskowokropkowaToolStripMenuItem.Click += new System.EventHandler(this.LiniaKreskowokropkowaToolStripMenuItem_Click);
             // 
             // kreskowoKropkowoKropkowaToolStripMenuItem
             // 
             this.kreskowoKropkowoKropkowaToolStripMenuItem.Name = "kreskowoKropkowoKropkowaToolStripMenuItem";
             this.kreskowoKropkowoKropkowaToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.kreskowoKropkowoKropkowaToolStripMenuItem.Text = "Kreskowo-Kropkowo-Kropkowa";
-            this.kreskowoKropkowoKropkowaToolStripMenuItem.Click += new System.EventHandler(this.kreskowoKropkowoKropkowaToolStripMenuItem_Click);
+            this.kreskowoKropkowoKropkowaToolStripMenuItem.Click += new System.EventHandler(this.KreskowoKropkowoKropkowaToolStripMenuItem_Click);
             // 
-            // PB_reset1
+            // reset1
             // 
-            this.PB_reset1.BackColor = System.Drawing.Color.BurlyWood;
-            this.PB_reset1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.PB_reset1.Location = new System.Drawing.Point(663, 315);
-            this.PB_reset1.Name = "PB_reset1";
-            this.PB_reset1.Size = new System.Drawing.Size(100, 50);
-            this.PB_reset1.TabIndex = 33;
-            this.PB_reset1.Text = "RESETUJ";
-            this.PB_reset1.UseVisualStyleBackColor = false;
-            this.PB_reset1.Click += new System.EventHandler(this.PB_reset1_Click);
+            this.reset1.BackColor = System.Drawing.Color.BurlyWood;
+            this.reset1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.reset1.Location = new System.Drawing.Point(663, 315);
+            this.reset1.Name = "reset1";
+            this.reset1.Size = new System.Drawing.Size(100, 50);
+            this.reset1.TabIndex = 33;
+            this.reset1.Text = "RESETUJ";
+            this.reset1.UseVisualStyleBackColor = false;
+            this.reset1.Click += new System.EventHandler(this.Reset1_Click);
             // 
-            // PB_PrzejdźDoLokaty
+            // PrzejdźDoLokaty
             // 
-            this.PB_PrzejdźDoLokaty.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.PB_PrzejdźDoLokaty.Location = new System.Drawing.Point(663, 371);
-            this.PB_PrzejdźDoLokaty.Name = "PB_PrzejdźDoLokaty";
-            this.PB_PrzejdźDoLokaty.Size = new System.Drawing.Size(100, 50);
-            this.PB_PrzejdźDoLokaty.TabIndex = 34;
-            this.PB_PrzejdźDoLokaty.Text = "Przejdź do formularza LOKATY";
-            this.PB_PrzejdźDoLokaty.UseVisualStyleBackColor = true;
-            this.PB_PrzejdźDoLokaty.Click += new System.EventHandler(this.PB_PrzejdźDoLokaty_Click);
+            this.PrzejdźDoLokaty.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PrzejdźDoLokaty.Location = new System.Drawing.Point(663, 371);
+            this.PrzejdźDoLokaty.Name = "PrzejdźDoLokaty";
+            this.PrzejdźDoLokaty.Size = new System.Drawing.Size(100, 50);
+            this.PrzejdźDoLokaty.TabIndex = 34;
+            this.PrzejdźDoLokaty.Text = "Przejdź do formularza LOKATY";
+            this.PrzejdźDoLokaty.UseVisualStyleBackColor = true;
+            this.PrzejdźDoLokaty.Click += new System.EventHandler(this.PrzejdźDoLokaty_Click);
             // 
             // menuStrip1
             // 
@@ -646,150 +646,150 @@
             this.zamknięcieFormularzaToolStripMenuItem.Name = "zamknięcieFormularzaToolStripMenuItem";
             this.zamknięcieFormularzaToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.zamknięcieFormularzaToolStripMenuItem.Text = "Zamknięcie formularza";
-            this.zamknięcieFormularzaToolStripMenuItem.Click += new System.EventHandler(this.zamknięcieFormularzaToolStripMenuItem_Click);
+            this.zamknięcieFormularzaToolStripMenuItem.Click += new System.EventHandler(this.ZamknięcieFormularzaToolStripMenuItem_Click);
             // 
             // zapiszRozliczenieDoPlikuToolStripMenuItem
             // 
             this.zapiszRozliczenieDoPlikuToolStripMenuItem.Name = "zapiszRozliczenieDoPlikuToolStripMenuItem";
             this.zapiszRozliczenieDoPlikuToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.zapiszRozliczenieDoPlikuToolStripMenuItem.Text = "Zapisz rozliczenie do pliku";
-            this.zapiszRozliczenieDoPlikuToolStripMenuItem.Click += new System.EventHandler(this.zapiszRozliczenieDoPlikuToolStripMenuItem_Click);
+            this.zapiszRozliczenieDoPlikuToolStripMenuItem.Click += new System.EventHandler(this.ZapiszRozliczenieDoPlikuToolStripMenuItem_Click);
             // 
             // wczytajRozliczenieZPlikuToolStripMenuItem
             // 
             this.wczytajRozliczenieZPlikuToolStripMenuItem.Name = "wczytajRozliczenieZPlikuToolStripMenuItem";
             this.wczytajRozliczenieZPlikuToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.wczytajRozliczenieZPlikuToolStripMenuItem.Text = "Wczytaj rozliczenie z pliku";
-            this.wczytajRozliczenieZPlikuToolStripMenuItem.Click += new System.EventHandler(this.wczytajRozliczenieZPlikuToolStripMenuItem_Click);
+            this.wczytajRozliczenieZPlikuToolStripMenuItem.Click += new System.EventHandler(this.WczytajRozliczenieZPlikuToolStripMenuItem_Click);
             // 
             // koniecToolStripMenuItem
             // 
             this.koniecToolStripMenuItem.Name = "koniecToolStripMenuItem";
             this.koniecToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.koniecToolStripMenuItem.Text = "Koniec";
-            this.koniecToolStripMenuItem.Click += new System.EventHandler(this.koniecToolStripMenuItem_Click);
+            this.koniecToolStripMenuItem.Click += new System.EventHandler(this.KoniecToolStripMenuItem_Click);
             // 
-            // PB_WybórLiniiWykresu
+            // WybórLiniiWykresu
             // 
-            this.PB_WybórLiniiWykresu.Controls.Add(this.PB_RataK);
-            this.PB_WybórLiniiWykresu.Controls.Add(this.PB_RataO);
-            this.PB_WybórLiniiWykresu.Controls.Add(this.PB_RataŁ);
-            this.PB_WybórLiniiWykresu.Location = new System.Drawing.Point(657, 184);
-            this.PB_WybórLiniiWykresu.Name = "PB_WybórLiniiWykresu";
-            this.PB_WybórLiniiWykresu.Size = new System.Drawing.Size(115, 108);
-            this.PB_WybórLiniiWykresu.TabIndex = 36;
-            this.PB_WybórLiniiWykresu.TabStop = false;
-            this.PB_WybórLiniiWykresu.Text = "Wybór linii wykresu";
-            this.PB_WybórLiniiWykresu.Visible = false;
+            this.WybórLiniiWykresu.Controls.Add(this.RataK);
+            this.WybórLiniiWykresu.Controls.Add(this.RataO);
+            this.WybórLiniiWykresu.Controls.Add(this.RataŁ);
+            this.WybórLiniiWykresu.Location = new System.Drawing.Point(657, 184);
+            this.WybórLiniiWykresu.Name = "WybórLiniiWykresu";
+            this.WybórLiniiWykresu.Size = new System.Drawing.Size(115, 108);
+            this.WybórLiniiWykresu.TabIndex = 36;
+            this.WybórLiniiWykresu.TabStop = false;
+            this.WybórLiniiWykresu.Text = "Wybór linii wykresu";
+            this.WybórLiniiWykresu.Visible = false;
             // 
-            // PB_RataK
+            // RataK
             // 
-            this.PB_RataK.AutoSize = true;
-            this.PB_RataK.Location = new System.Drawing.Point(6, 83);
-            this.PB_RataK.Name = "PB_RataK";
-            this.PB_RataK.Size = new System.Drawing.Size(104, 17);
-            this.PB_RataK.TabIndex = 2;
-            this.PB_RataK.TabStop = true;
-            this.PB_RataK.Text = "Rata kapitałowa";
-            this.PB_RataK.UseVisualStyleBackColor = true;
+            this.RataK.AutoSize = true;
+            this.RataK.Location = new System.Drawing.Point(6, 83);
+            this.RataK.Name = "RataK";
+            this.RataK.Size = new System.Drawing.Size(104, 17);
+            this.RataK.TabIndex = 2;
+            this.RataK.TabStop = true;
+            this.RataK.Text = "Rata kapitałowa";
+            this.RataK.UseVisualStyleBackColor = true;
             // 
-            // PB_RataO
+            // RataO
             // 
-            this.PB_RataO.AutoSize = true;
-            this.PB_RataO.Location = new System.Drawing.Point(6, 60);
-            this.PB_RataO.Name = "PB_RataO";
-            this.PB_RataO.Size = new System.Drawing.Size(103, 17);
-            this.PB_RataO.TabIndex = 1;
-            this.PB_RataO.TabStop = true;
-            this.PB_RataO.Text = "Rata odsetkowa";
-            this.PB_RataO.UseVisualStyleBackColor = true;
+            this.RataO.AutoSize = true;
+            this.RataO.Location = new System.Drawing.Point(6, 60);
+            this.RataO.Name = "RataO";
+            this.RataO.Size = new System.Drawing.Size(103, 17);
+            this.RataO.TabIndex = 1;
+            this.RataO.TabStop = true;
+            this.RataO.Text = "Rata odsetkowa";
+            this.RataO.UseVisualStyleBackColor = true;
             // 
-            // PB_RataŁ
+            // RataŁ
             // 
-            this.PB_RataŁ.AutoSize = true;
-            this.PB_RataŁ.Location = new System.Drawing.Point(6, 36);
-            this.PB_RataŁ.Name = "PB_RataŁ";
-            this.PB_RataŁ.Size = new System.Drawing.Size(84, 17);
-            this.PB_RataŁ.TabIndex = 0;
-            this.PB_RataŁ.TabStop = true;
-            this.PB_RataŁ.Text = "Rata łączna";
-            this.PB_RataŁ.UseVisualStyleBackColor = true;
+            this.RataŁ.AutoSize = true;
+            this.RataŁ.Location = new System.Drawing.Point(6, 36);
+            this.RataŁ.Name = "RataŁ";
+            this.RataŁ.Size = new System.Drawing.Size(84, 17);
+            this.RataŁ.TabIndex = 0;
+            this.RataŁ.TabStop = true;
+            this.RataŁ.Text = "Rata łączna";
+            this.RataŁ.UseVisualStyleBackColor = true;
             // 
-            // PB_KKinfo
+            // KKinfo
             // 
-            this.PB_KKinfo.AutoSize = true;
-            this.PB_KKinfo.Location = new System.Drawing.Point(654, 49);
-            this.PB_KKinfo.Name = "PB_KKinfo";
-            this.PB_KKinfo.Size = new System.Drawing.Size(120, 13);
-            this.PB_KKinfo.TabIndex = 37;
-            this.PB_KKinfo.Text = "Całkowity koszt kredytu";
+            this.KKinfo.AutoSize = true;
+            this.KKinfo.Location = new System.Drawing.Point(654, 49);
+            this.KKinfo.Name = "KKinfo";
+            this.KKinfo.Size = new System.Drawing.Size(120, 13);
+            this.KKinfo.TabIndex = 37;
+            this.KKinfo.Text = "Całkowity koszt kredytu";
             // 
-            // PB_SZInfo
+            // SZInfo
             // 
-            this.PB_SZInfo.Location = new System.Drawing.Point(654, 105);
-            this.PB_SZInfo.Name = "PB_SZInfo";
-            this.PB_SZInfo.Size = new System.Drawing.Size(116, 30);
-            this.PB_SZInfo.TabIndex = 38;
-            this.PB_SZInfo.Text = "Stan zadłużenie po spłaceniu ostatniej raty";
-            this.PB_SZInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SZInfo.Location = new System.Drawing.Point(654, 105);
+            this.SZInfo.Name = "SZInfo";
+            this.SZInfo.Size = new System.Drawing.Size(116, 30);
+            this.SZInfo.TabIndex = 38;
+            this.SZInfo.Text = "Stan zadłużenie po spłaceniu ostatniej raty";
+            this.SZInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // PB_KosztyKredytu
+            // KosztyKredytu
             // 
-            this.PB_KosztyKredytu.Enabled = false;
-            this.PB_KosztyKredytu.Location = new System.Drawing.Point(657, 74);
-            this.PB_KosztyKredytu.Name = "PB_KosztyKredytu";
-            this.PB_KosztyKredytu.Size = new System.Drawing.Size(115, 20);
-            this.PB_KosztyKredytu.TabIndex = 39;
+            this.KosztyKredytu.Enabled = false;
+            this.KosztyKredytu.Location = new System.Drawing.Point(657, 74);
+            this.KosztyKredytu.Name = "KosztyKredytu";
+            this.KosztyKredytu.Size = new System.Drawing.Size(115, 20);
+            this.KosztyKredytu.TabIndex = 39;
             // 
-            // PB_KońcoweZadłużenie
+            // KońcoweZadłużenie
             // 
-            this.PB_KońcoweZadłużenie.Enabled = false;
-            this.PB_KońcoweZadłużenie.Location = new System.Drawing.Point(657, 143);
-            this.PB_KońcoweZadłużenie.Name = "PB_KońcoweZadłużenie";
-            this.PB_KońcoweZadłużenie.Size = new System.Drawing.Size(115, 20);
-            this.PB_KońcoweZadłużenie.TabIndex = 40;
+            this.KońcoweZadłużenie.Enabled = false;
+            this.KońcoweZadłużenie.Location = new System.Drawing.Point(657, 143);
+            this.KońcoweZadłużenie.Name = "KońcoweZadłużenie";
+            this.KońcoweZadłużenie.Size = new System.Drawing.Size(115, 20);
+            this.KońcoweZadłużenie.TabIndex = 40;
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // PB_Kredyty
+            // Kredyty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 462);
-            this.Controls.Add(this.PB_KońcoweZadłużenie);
-            this.Controls.Add(this.PB_KosztyKredytu);
-            this.Controls.Add(this.PB_reset1);
-            this.Controls.Add(this.PB_SZInfo);
-            this.Controls.Add(this.PB_KKinfo);
-            this.Controls.Add(this.PB_WybórLiniiWykresu);
-            this.Controls.Add(this.PB_PrzejdźDoLokaty);
+            this.Controls.Add(this.KońcoweZadłużenie);
+            this.Controls.Add(this.KosztyKredytu);
+            this.Controls.Add(this.reset1);
+            this.Controls.Add(this.SZInfo);
+            this.Controls.Add(this.KKinfo);
+            this.Controls.Add(this.WybórLiniiWykresu);
+            this.Controls.Add(this.PrzejdźDoLokaty);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "PB_Kredyty";
+            this.Name = "Kredyty";
             this.Text = "Kredyty";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PB_Kredyty_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Kredyty_FormClosing);
             this.tabControl1.ResumeLayout(false);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.ResumeLayout(false);
-            this.PB_ZakładkaRozliczenieSpłatyKredytu.PerformLayout();
-            this.PB_SposóbNaliczaniaRat.ResumeLayout(false);
-            this.PB_SposóbNaliczaniaRat.PerformLayout();
-            this.PB_OkresNaliczaniaOdsetek.ResumeLayout(false);
-            this.PB_OkresNaliczaniaOdsetek.PerformLayout();
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.ResumeLayout(false);
-            this.PB_ZakładkaTabelaryczneRozliczenieKredytu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_Tabela)).EndInit();
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu.ResumeLayout(false);
-            this.PB_ZakładkaGraficznaPrezentacjaKredytu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_Wykres)).EndInit();
-            this.PB_FormatowanieWykresu.ResumeLayout(false);
-            this.PB_FormatowanieWykresu.PerformLayout();
+            this.ZakładkaRozliczenieSpłatyKredytu.ResumeLayout(false);
+            this.ZakładkaRozliczenieSpłatyKredytu.PerformLayout();
+            this.SposóbNaliczaniaRat.ResumeLayout(false);
+            this.SposóbNaliczaniaRat.PerformLayout();
+            this.OkresNaliczaniaOdsetek.ResumeLayout(false);
+            this.OkresNaliczaniaOdsetek.PerformLayout();
+            this.ZakładkaTabelaryczneRozliczenieKredytu.ResumeLayout(false);
+            this.ZakładkaTabelaryczneRozliczenieKredytu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Tabela)).EndInit();
+            this.ZakładkaGraficznaPrezentacjaKredytu.ResumeLayout(false);
+            this.ZakładkaGraficznaPrezentacjaKredytu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Wykres)).EndInit();
+            this.FormatowanieWykresu.ResumeLayout(false);
+            this.FormatowanieWykresu.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.PB_WybórLiniiWykresu.ResumeLayout(false);
-            this.PB_WybórLiniiWykresu.PerformLayout();
+            this.WybórLiniiWykresu.ResumeLayout(false);
+            this.WybórLiniiWykresu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -799,42 +799,42 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage PB_ZakładkaRozliczenieSpłatyKredytu;
-        private System.Windows.Forms.TabPage PB_ZakładkaTabelaryczneRozliczenieKredytu;
-        private System.Windows.Forms.TabPage PB_ZakładkaGraficznaPrezentacjaKredytu;
-        private System.Windows.Forms.Button PB_GraficznaPrezentacjaRat;
-        private System.Windows.Forms.Button PB_reset1;
-        private System.Windows.Forms.Button PB_TabelarycznaPrezentacjaRat;
-        private System.Windows.Forms.GroupBox PB_SposóbNaliczaniaRat;
-        private System.Windows.Forms.RadioButton PB_Rosnące;
-        private System.Windows.Forms.RadioButton PB_Malejące;
-        private System.Windows.Forms.RadioButton PB_Stałe;
-        private System.Windows.Forms.GroupBox PB_OkresNaliczaniaOdsetek;
-        private System.Windows.Forms.RadioButton PB_CoMiesiąc;
-        private System.Windows.Forms.RadioButton PB_CoKwartał;
-        private System.Windows.Forms.RadioButton PB_CoPółRoku;
-        private System.Windows.Forms.RadioButton PB_RazNaRok;
-        private System.Windows.Forms.ComboBox PB_StopaProcentowa;
-        private System.Windows.Forms.Label PB_SP;
-        private System.Windows.Forms.TextBox PB_OkresSpłaty;
-        private System.Windows.Forms.TextBox PB_KwotaKredytu;
-        private System.Windows.Forms.Label PB_OS;
-        private System.Windows.Forms.Label PB_WK;
-        private System.Windows.Forms.Button PB_PrzejdźDoLokaty;
-        private System.Windows.Forms.TextBox PB_InfoWysokośćRatyKapitałowej;
-        private System.Windows.Forms.DataGridView PB_Tabela;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PB_NumerRaty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PB_RataŁączna;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PB_RataOdsetkowa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PB_ZadłużeniePoWpłaceniuRaty;
-        private System.Windows.Forms.Label PB_WRInfo;
+        private System.Windows.Forms.TabPage ZakładkaRozliczenieSpłatyKredytu;
+        private System.Windows.Forms.TabPage ZakładkaTabelaryczneRozliczenieKredytu;
+        private System.Windows.Forms.TabPage ZakładkaGraficznaPrezentacjaKredytu;
+        private System.Windows.Forms.Button GraficznaPrezentacjaRat;
+        private System.Windows.Forms.Button reset1;
+        private System.Windows.Forms.Button TabelarycznaPrezentacjaRat;
+        private System.Windows.Forms.GroupBox SposóbNaliczaniaRat;
+        private System.Windows.Forms.RadioButton Rosnące;
+        private System.Windows.Forms.RadioButton Malejące;
+        private System.Windows.Forms.RadioButton Stałe;
+        private System.Windows.Forms.GroupBox OkresNaliczaniaOdsetek;
+        private System.Windows.Forms.RadioButton CoMiesiąc;
+        private System.Windows.Forms.RadioButton CoKwartał;
+        private System.Windows.Forms.RadioButton CoPółRoku;
+        private System.Windows.Forms.RadioButton RazNaRok;
+        private System.Windows.Forms.ComboBox StopaProcentowa;
+        private System.Windows.Forms.Label SP;
+        private System.Windows.Forms.TextBox OkresSpłaty;
+        private System.Windows.Forms.TextBox KwotaKredytu;
+        private System.Windows.Forms.Label OS;
+        private System.Windows.Forms.Label WK;
+        private System.Windows.Forms.Button PrzejdźDoLokaty;
+        private System.Windows.Forms.TextBox InfoWysokośćRatyKapitałowej;
+        private System.Windows.Forms.DataGridView Tabela;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumerRaty;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RataŁączna;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RataOdsetkowa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ZadłużeniePoWpłaceniuRaty;
+        private System.Windows.Forms.Label WRInfo;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem zamknięcieFormularzaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zapiszRozliczenieDoPlikuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wczytajRozliczenieZPlikuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem koniecToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip PB_FormatowanieWykresu;
+        private System.Windows.Forms.MenuStrip FormatowanieWykresu;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem zmianaKoloruLiniiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem linia1ToolStripMenuItem;
@@ -849,20 +849,20 @@
         private System.Windows.Forms.ToolStripMenuItem liniaKreskowaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem liniaKropkowaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem liniaKreskowokropkowaToolStripMenuItem;
-        private System.Windows.Forms.GroupBox PB_WybórLiniiWykresu;
-        private System.Windows.Forms.RadioButton PB_RataK;
-        private System.Windows.Forms.RadioButton PB_RataO;
-        private System.Windows.Forms.RadioButton PB_RataŁ;
-        private System.Windows.Forms.Label PB_KKinfo;
-        private System.Windows.Forms.Label PB_SZInfo;
-        private System.Windows.Forms.TextBox PB_KosztyKredytu;
-        private System.Windows.Forms.TextBox PB_KońcoweZadłużenie;
-        private System.Windows.Forms.DataVisualization.Charting.Chart PB_Wykres;
+        private System.Windows.Forms.GroupBox WybórLiniiWykresu;
+        private System.Windows.Forms.RadioButton RataK;
+        private System.Windows.Forms.RadioButton RataO;
+        private System.Windows.Forms.RadioButton RataŁ;
+        private System.Windows.Forms.Label KKinfo;
+        private System.Windows.Forms.Label SZInfo;
+        private System.Windows.Forms.TextBox KosztyKredytu;
+        private System.Windows.Forms.TextBox KońcoweZadłużenie;
+        private System.Windows.Forms.DataVisualization.Charting.Chart Wykres;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.Label PB_InfoProcent;
+        private System.Windows.Forms.Label InfoProcent;
         private System.Windows.Forms.ToolStripMenuItem kreskowoKropkowoKropkowaToolStripMenuItem;
-        private System.Windows.Forms.Label PB_InfoSeparator;
-        private System.Windows.Forms.TextBox PB_Separator;
+        private System.Windows.Forms.Label InfoSeparator;
+        private System.Windows.Forms.TextBox Separator;
 
     }
 }
