@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
@@ -42,23 +43,19 @@ namespace Lokaty_Kredyty
             }
 
             // sprawdzenie, czy klient wybrał stopę procentową
-            if (Oprocentowanie.SelectedIndex < 0)
+            if (Nud_Digit1.Value == 0 && Nud_Digit2.Value == 0 && Nud_Digit3.Value == 0)
             {
                 // jesli nie wybrał - zgłoszenie błędu
-                errorProvider1.SetError(Oprocentowanie,
+                errorProvider1.SetError(Lb_Procent,
                     "ERROR: musisz wybrać stopę procentową!");
                 return false;
             }
-
-            // pobranie wartości stopy procentowej i wprowadzenie jej do zmiennej OprocentowanieLokaty
-            if (!float.TryParse(Oprocentowanie.SelectedItem.ToString(), out OprocentowanieLokaty))
+            else
             {
-                // jesli jakiimś cudem w strumieniu danych pojawi sie niedozwolony znak - zgłoszenie błędu
-                errorProvider1.SetError(Oprocentowanie,
-                    "ERROR: niedozwolony znak w zapisie stopy procentowej!");
-                return false;
-                // w innym wypadku wczytanie oprocentowanie do zmiennej OprocentowanieLokaty
+                OprocentowanieLokaty = (float)((Nud_Digit1.Value + Nud_Digit2.Value / 10 + Nud_Digit3.Value / 100))/100;
+                errorProvider1.Dispose();
             }
+
 
             // sprawdzenie, czy wpisano cokolwiek do kontrolki określającej okres lokaty
             if (string.IsNullOrEmpty(CzasNaliczaniaLokaty.Text))
@@ -104,7 +101,7 @@ namespace Lokaty_Kredyty
         }
 
         // metoda zamykająca program jeśli użytkownik wybieże z menu opcję "Exit"
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -125,15 +122,14 @@ namespace Lokaty_Kredyty
         private void ObliczStanKonta_Click(object sender, EventArgs e)
         {
             // deklaracje lokalne
-            float WartośćLokaty, OprocentowanieLokaty, PrzyszłyStanKonta;
-            int OkresLokaty;
+            float PrzyszłyStanKonta;
             string formater;
 
             // zgaszenie zapalonej kontrolki błędu
             errorProvider1.Clear();
             
             // pobranie sprawdznych danych wejściowych
-            if (!PobierzDaneWejściowe(out WartośćLokaty, out OprocentowanieLokaty, out OkresLokaty))
+            if (!PobierzDaneWejściowe(out float WartośćLokaty, out float OprocentowanieLokaty, out int OkresLokaty))
             return ;
 
             // obliczenie przyszłego stanu konta
@@ -219,13 +215,8 @@ namespace Lokaty_Kredyty
                 TabelarycznaPrezentacjaLokaty.Rows.RemoveAt(0);
             }
 
-                // deklaracje lokalne
-                float WartośćLokaty;
-                float OprocentowanieLokaty;
-                int OkresLokaty;
-
                 // pobranie danych wejściowych dla obsługi zdarzenia Click
-                if (!PobierzDaneWejściowe(out WartośćLokaty, out OprocentowanieLokaty, out OkresLokaty))
+                if (!PobierzDaneWejściowe(out float WartośćLokaty, out float OprocentowanieLokaty, out int OkresLokaty))
                     return;
 
                 // wykryto błąd przy pobieraniu danych i obsługa zdarzenia Click musi zostać przerwana
@@ -293,13 +284,8 @@ namespace Lokaty_Kredyty
             WykresLokata.Titles.Clear();
             WykresLokata.Series.Clear();
 
-            // deklaracje lokalne
-            float WartośćLokaty;
-            float OprocentowanieLokaty;
-            int OkresLokaty;
-
             // pobranie danych wejściowych dla obsługi zdarzenia Click
-            if (!PobierzDaneWejściowe(out WartośćLokaty, out OprocentowanieLokaty, out OkresLokaty))
+            if (!PobierzDaneWejściowe(out float WartośćLokaty, out float OprocentowanieLokaty, out int OkresLokaty))
             // w przypadku wykrycia jakiegoś błędu obsługa zostaje przerwana
             return;
 
@@ -378,37 +364,37 @@ namespace Lokaty_Kredyty
         }
 
         // określenie typu wykresu przy użyciu elementów Menu
-        private void lineToolStripMenuItem_Click(object sender, EventArgs e)
+        private void LineToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WykresLokata.Series[0].ChartType = SeriesChartType.Line;
         }
 
-        private void barToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WykresLokata.Series[0].ChartType = SeriesChartType.Bar;
         }
 
-        private void bubbleToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BubbleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WykresLokata.Series[0].ChartType = SeriesChartType.Bubble;
         }
 
-        private void columnToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ColumnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WykresLokata.Series[0].ChartType = SeriesChartType.Column;
         }
 
-        private void radarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RadarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WykresLokata.Series[0].ChartType = SeriesChartType.Radar;
         }
 
-        private void rangeBarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RangeBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WykresLokata.Series[0].ChartType = SeriesChartType.RangeBar;
         }
 
-        private void stepLineToolStripMenuItem_Click(object sender, EventArgs e)
+        private void StepLineToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WykresLokata.Series[0].ChartType = SeriesChartType.StepLine;
         }
@@ -445,6 +431,38 @@ namespace Lokaty_Kredyty
                             {
                                 WykresLokata.Series[0].BorderWidth = 5;
                             }
+        }
+
+        private void Lokaty_Load(object sender, EventArgs e)
+        {
+            Nud_Digit1.BringToFront();
+            Nud_Digit2.BringToFront();
+            Nud_Digit3.BringToFront();
+            Lb_Separator.SendToBack();
+            //FillOprocentowanie();
+        }
+
+
+        private void FillOprocentowanie()
+        {
+            //Oprocentowanie.DisplayMember = "Text";
+            //Oprocentowanie.ValueMember = "Value";
+
+            //List<object> items = new List<object>();
+
+            //items.Add(new { Text = "report A", Value = "reportA" });
+            //items.Add(new { Text = "report A", Value = "reportA" });
+            //items.Add(new { Text = "report A", Value = "reportA" });
+            //items.Add(new { Text = "report A", Value = "reportA" });
+            //items.Add(new { Text = "report A", Value = "reportA" });
+            //items.Add(new { Text = "report A", Value = "reportA" });
+            //items.Add(new { Text = "report A", Value = "reportA" });
+            //items.Add(new { Text = "report A", Value = "reportA" });
+            //items.Add(new { Text = "report A", Value = "reportA" });
+            //items.Add(new { Text = "report A", Value = "reportA" });
+
+
+            //Oprocentowanie.DataSource = items;
         }
     }
 }

@@ -34,7 +34,6 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.ZakładkaRozliczenieSpłatyKredytu = new System.Windows.Forms.TabPage();
-            this.InfoProcent = new System.Windows.Forms.Label();
             this.GraficznaPrezentacjaRat = new System.Windows.Forms.Button();
             this.TabelarycznaPrezentacjaRat = new System.Windows.Forms.Button();
             this.SposóbNaliczaniaRat = new System.Windows.Forms.GroupBox();
@@ -46,7 +45,6 @@
             this.CoKwartał = new System.Windows.Forms.RadioButton();
             this.CoPółRoku = new System.Windows.Forms.RadioButton();
             this.RazNaRok = new System.Windows.Forms.RadioButton();
-            this.StopaProcentowa = new System.Windows.Forms.ComboBox();
             this.SP = new System.Windows.Forms.Label();
             this.OkresSpłaty = new System.Windows.Forms.TextBox();
             this.KwotaKredytu = new System.Windows.Forms.TextBox();
@@ -97,6 +95,11 @@
             this.KosztyKredytu = new System.Windows.Forms.TextBox();
             this.KońcoweZadłużenie = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Lb_Separator = new System.Windows.Forms.Label();
+            this.Lb_Procent = new System.Windows.Forms.Label();
+            this.Nud_Digit3 = new System.Windows.Forms.NumericUpDown();
+            this.Nud_Digit2 = new System.Windows.Forms.NumericUpDown();
+            this.Nud_Digit1 = new System.Windows.Forms.NumericUpDown();
             this.tabControl1.SuspendLayout();
             this.ZakładkaRozliczenieSpłatyKredytu.SuspendLayout();
             this.SposóbNaliczaniaRat.SuspendLayout();
@@ -109,6 +112,9 @@
             this.menuStrip1.SuspendLayout();
             this.WybórLiniiWykresu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_Digit3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_Digit2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_Digit1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -125,12 +131,15 @@
             // ZakładkaRozliczenieSpłatyKredytu
             // 
             this.ZakładkaRozliczenieSpłatyKredytu.BackColor = System.Drawing.SystemColors.Control;
-            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.InfoProcent);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.Lb_Separator);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.Lb_Procent);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.Nud_Digit3);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.Nud_Digit2);
+            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.Nud_Digit1);
             this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.GraficznaPrezentacjaRat);
             this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.TabelarycznaPrezentacjaRat);
             this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.SposóbNaliczaniaRat);
             this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.OkresNaliczaniaOdsetek);
-            this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.StopaProcentowa);
             this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.SP);
             this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.OkresSpłaty);
             this.ZakładkaRozliczenieSpłatyKredytu.Controls.Add(this.KwotaKredytu);
@@ -142,15 +151,6 @@
             this.ZakładkaRozliczenieSpłatyKredytu.Size = new System.Drawing.Size(629, 413);
             this.ZakładkaRozliczenieSpłatyKredytu.TabIndex = 0;
             this.ZakładkaRozliczenieSpłatyKredytu.Text = "Rozliczenie Spłaty Kredytu";
-            // 
-            // InfoProcent
-            // 
-            this.InfoProcent.AutoSize = true;
-            this.InfoProcent.Location = new System.Drawing.Point(471, 92);
-            this.InfoProcent.Name = "InfoProcent";
-            this.InfoProcent.Size = new System.Drawing.Size(15, 13);
-            this.InfoProcent.TabIndex = 43;
-            this.InfoProcent.Text = "%";
             // 
             // GraficznaPrezentacjaRat
             // 
@@ -270,34 +270,6 @@
             this.RazNaRok.TabIndex = 0;
             this.RazNaRok.Text = "Raz w roku";
             this.RazNaRok.UseVisualStyleBackColor = true;
-            // 
-            // StopaProcentowa
-            // 
-            this.StopaProcentowa.FormattingEnabled = true;
-            this.StopaProcentowa.Items.AddRange(new object[] {
-            "3,83",
-            "0,03",
-            "0,04",
-            "0,05",
-            "0,06",
-            "0,07",
-            "0,08",
-            "0,09",
-            "0,10",
-            "0,11",
-            "0,12",
-            "0,13",
-            "0,14",
-            "0,15",
-            "0,16",
-            "0,17",
-            "0,18",
-            "0,19",
-            "0,20"});
-            this.StopaProcentowa.Location = new System.Drawing.Point(393, 89);
-            this.StopaProcentowa.Name = "StopaProcentowa";
-            this.StopaProcentowa.Size = new System.Drawing.Size(72, 21);
-            this.StopaProcentowa.TabIndex = 38;
             // 
             // SP
             // 
@@ -753,6 +725,63 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // Lb_Separator
+            // 
+            this.Lb_Separator.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Lb_Separator.Location = new System.Drawing.Point(412, 84);
+            this.Lb_Separator.Name = "Lb_Separator";
+            this.Lb_Separator.Size = new System.Drawing.Size(11, 24);
+            this.Lb_Separator.TabIndex = 47;
+            this.Lb_Separator.Text = ",";
+            // 
+            // Lb_Procent
+            // 
+            this.Lb_Procent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Lb_Procent.Location = new System.Drawing.Point(477, 90);
+            this.Lb_Procent.Name = "Lb_Procent";
+            this.Lb_Procent.Size = new System.Drawing.Size(15, 23);
+            this.Lb_Procent.TabIndex = 46;
+            this.Lb_Procent.Text = "%";
+            // 
+            // Nud_Digit3
+            // 
+            this.Nud_Digit3.Location = new System.Drawing.Point(451, 90);
+            this.Nud_Digit3.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.Nud_Digit3.Name = "Nud_Digit3";
+            this.Nud_Digit3.Size = new System.Drawing.Size(28, 20);
+            this.Nud_Digit3.TabIndex = 45;
+            this.Nud_Digit3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Nud_Digit2
+            // 
+            this.Nud_Digit2.Location = new System.Drawing.Point(425, 90);
+            this.Nud_Digit2.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.Nud_Digit2.Name = "Nud_Digit2";
+            this.Nud_Digit2.Size = new System.Drawing.Size(28, 20);
+            this.Nud_Digit2.TabIndex = 44;
+            this.Nud_Digit2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Nud_Digit1
+            // 
+            this.Nud_Digit1.Location = new System.Drawing.Point(387, 90);
+            this.Nud_Digit1.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.Nud_Digit1.Name = "Nud_Digit1";
+            this.Nud_Digit1.Size = new System.Drawing.Size(28, 20);
+            this.Nud_Digit1.TabIndex = 43;
+            this.Nud_Digit1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Kredyty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -791,6 +820,9 @@
             this.WybórLiniiWykresu.ResumeLayout(false);
             this.WybórLiniiWykresu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_Digit3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_Digit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_Digit1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -814,7 +846,6 @@
         private System.Windows.Forms.RadioButton CoKwartał;
         private System.Windows.Forms.RadioButton CoPółRoku;
         private System.Windows.Forms.RadioButton RazNaRok;
-        private System.Windows.Forms.ComboBox StopaProcentowa;
         private System.Windows.Forms.Label SP;
         private System.Windows.Forms.TextBox OkresSpłaty;
         private System.Windows.Forms.TextBox KwotaKredytu;
@@ -859,10 +890,13 @@
         private System.Windows.Forms.TextBox KońcoweZadłużenie;
         private System.Windows.Forms.DataVisualization.Charting.Chart Wykres;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.Label InfoProcent;
         private System.Windows.Forms.ToolStripMenuItem kreskowoKropkowoKropkowaToolStripMenuItem;
         private System.Windows.Forms.Label InfoSeparator;
         private System.Windows.Forms.TextBox Separator;
-
+        private System.Windows.Forms.Label Lb_Separator;
+        private System.Windows.Forms.Label Lb_Procent;
+        private System.Windows.Forms.NumericUpDown Nud_Digit3;
+        private System.Windows.Forms.NumericUpDown Nud_Digit2;
+        private System.Windows.Forms.NumericUpDown Nud_Digit1;
     }
 }

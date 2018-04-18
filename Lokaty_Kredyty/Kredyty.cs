@@ -3,6 +3,7 @@ using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Collections.Generic;
 
 namespace Lokaty_Kredyty
 {
@@ -45,25 +46,18 @@ namespace Lokaty_Kredyty
             errorProvider1.Dispose();
 
             // sprawdzenie, czy klient wybrał stopę procentową
-            if (StopaProcentowa.SelectedIndex < 0)
+            if (Nud_Digit1.Value == 0 && Nud_Digit2.Value == 0 && Nud_Digit3.Value == 0)
             {
                 // jesli nie wybrał - zgłoszenie błędu
-                errorProvider1.SetError(StopaProcentowa,
+                errorProvider1.SetError(Lb_Procent,
                     "ERROR: musisz wybrać stopę procentową!");
                 return false;
             }
-            errorProvider1.Dispose();
-
-            // pobranie wartości stopy procentowej i wprowadzenie jej do zmiennej OprocentowanieKredytu
-            if (!float.TryParse(StopaProcentowa.SelectedItem.ToString(), out OprocentowanieKredytu))
+            else
             {
-                // jesli jakiimś cudem w strumieniu danych pojawi sie niedozwolony znak - zgłoszenie błędu
-                errorProvider1.SetError(StopaProcentowa,
-                    "ERROR: niedozwolony znak w zapisie stopy procentowej!");
-                return false;
-                // w innym wypadku wczytanie oprocentowanie do zmiennej OprocentowanieKredytu
+                OprocentowanieKredytu = (float)((Nud_Digit1.Value + Nud_Digit2.Value / 10 + Nud_Digit3.Value / 100)/100);
+                errorProvider1.Dispose();
             }
-            errorProvider1.Dispose();
 
             // sprawdzenie, czy wpisano cokolwiek do kontrolki określającej okres kredytowania
             if (string.IsNullOrEmpty(OkresSpłaty.Text))
@@ -195,10 +189,10 @@ namespace Lokaty_Kredyty
                     RozliczenieKredyu[i, 2] = Zadłużnie;      // zadłużenie
 
                     // wyznaczenie wartości zmiennych dla kolejneg okresu spłaty kredytu
-                    RataOdsetkowa = Zadłużnie * oprocentowanieKredytu / liczbaRatWRoku; // rata odsetkowa
+                    RataOdsetkowa = (Zadłużnie * oprocentowanieKredytu) / liczbaRatWRoku;  // rata odsetkowa
                     RataŁączna = RataKapitałowa + RataOdsetkowa;                           // raty łącznej
                     Zadłużnie = Zadłużnie - RataKapitałowa;                                // zadłużenia po wpłaceniu kolejnej raty kapitałowej
-                    KosztKredytu += RataOdsetkowa;                                            // sumowanie kosztu korzystania z kredytu
+                    KosztKredytu += RataOdsetkowa;                                         // sumowanie kosztu korzystania z kredytu
                 }
 
                 // wyprowadzenie do kontrolku formularza informacji o całkowitym koszcie kredytu
@@ -1066,7 +1060,9 @@ namespace Lokaty_Kredyty
             Stałe.Checked = false;
             Malejące.Checked = true;
             Rosnące.Checked = false;
-            StopaProcentowa.SelectedIndex = -1;
+            Nud_Digit1.Value = 0;
+            Nud_Digit2.Value = 0;
+            Nud_Digit3.Value = 0;
             KwotaKredytu.Text = "";
             OkresSpłaty.Text = "";
             KosztyKredytu.Text = "";
@@ -1145,7 +1141,10 @@ namespace Lokaty_Kredyty
                 // wczytanie dodatkowych danych do kontrolek formularza KREDYTY z ostatniej linii pliku
                 KwotaKredytu.Text = TabelaWczytanychDanych[Wiersze - 1, 0];
                 OkresSpłaty.Text = TabelaWczytanychDanych[Wiersze - 1, 1];
-                StopaProcentowa.SelectedText = TabelaWczytanychDanych[Wiersze - 1, 2];
+                List<char> procent = KonwertujProcent(TabelaWczytanychDanych[Wiersze - 1, 2]);
+                Nud_Digit1.Value = Convert.ToInt32(procent[0]);
+                Nud_Digit2.Value = Convert.ToInt32(procent[2]);
+                Nud_Digit3.Value = Convert.ToInt32(procent[3]);
                 KońcoweZadłużenie.Text = TabelaWczytanychDanych[Wiersze - 1, 3];
 
 
@@ -1164,6 +1163,15 @@ namespace Lokaty_Kredyty
                 // przejście do 2 zakłądki formularza KREDYTY
                 this.tabControl1.SelectedTab = ZakładkaTabelaryczneRozliczenieKredytu;
             }
+        }
+
+
+
+        private List<char> KonwertujProcent(string procent)
+        {
+            List<char> charList = new List<char>();
+            charList.AddRange(procent);
+            return charList;
         }
 
 
@@ -1216,7 +1224,7 @@ namespace Lokaty_Kredyty
                 // przeniesienie do pliku danych wsadowych do obliczenia kredytu
                 Tymczasowy += KwotaKredytu.Text + '.';
                 Tymczasowy += OkresSpłaty.Text + '.';
-                Tymczasowy += StopaProcentowa.SelectedItem.ToString() + '.';
+                Tymczasowy += (Nud_Digit1.Value + Nud_Digit2.Value + Nud_Digit3.Value).ToString() + '.';
                 Tymczasowy += KońcoweZadłużenie.Text + '.';
 
                 // zapis danych do pliku dyskowego

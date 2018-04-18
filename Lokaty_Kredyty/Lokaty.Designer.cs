@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.MenuLokaty = new System.Windows.Forms.MenuStrip();
             this.LokatyFile = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +47,6 @@
             this.InfoKwota = new System.Windows.Forms.Label();
             this.KwotaLokaty = new System.Windows.Forms.TextBox();
             this.InfoOprocentowanie = new System.Windows.Forms.Label();
-            this.Oprocentowanie = new System.Windows.Forms.ComboBox();
             this.InfoOkres = new System.Windows.Forms.Label();
             this.CzasNaliczaniaLokaty = new System.Windows.Forms.TextBox();
             this._WybierzKolorLiniiWykresu = new System.Windows.Forms.Button();
@@ -77,12 +76,20 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.GrubośćLiniiWykresu = new System.Windows.Forms.TrackBar();
             this.InfoSN = new System.Windows.Forms.Label();
+            this.Nud_Digit1 = new System.Windows.Forms.NumericUpDown();
+            this.Nud_Digit2 = new System.Windows.Forms.NumericUpDown();
+            this.Nud_Digit3 = new System.Windows.Forms.NumericUpDown();
+            this.Lb_Procent = new System.Windows.Forms.Label();
+            this.Lb_Separator = new System.Windows.Forms.Label();
             this.MenuLokaty.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Obrazek)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TabelarycznaPrezentacjaLokaty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WykresLokata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrubośćLiniiWykresu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_Digit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_Digit2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_Digit3)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuLokaty
@@ -109,7 +116,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // LokatyZTW
             // 
@@ -130,49 +137,49 @@
             this.lineToolStripMenuItem.Name = "lineToolStripMenuItem";
             this.lineToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.lineToolStripMenuItem.Text = "Line";
-            this.lineToolStripMenuItem.Click += new System.EventHandler(this.lineToolStripMenuItem_Click);
+            this.lineToolStripMenuItem.Click += new System.EventHandler(this.LineToolStripMenuItem_Click);
             // 
             // barToolStripMenuItem
             // 
             this.barToolStripMenuItem.Name = "barToolStripMenuItem";
             this.barToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.barToolStripMenuItem.Text = "Bar";
-            this.barToolStripMenuItem.Click += new System.EventHandler(this.barToolStripMenuItem_Click);
+            this.barToolStripMenuItem.Click += new System.EventHandler(this.BarToolStripMenuItem_Click);
             // 
             // bubbleToolStripMenuItem
             // 
             this.bubbleToolStripMenuItem.Name = "bubbleToolStripMenuItem";
             this.bubbleToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.bubbleToolStripMenuItem.Text = "Bubble";
-            this.bubbleToolStripMenuItem.Click += new System.EventHandler(this.bubbleToolStripMenuItem_Click);
+            this.bubbleToolStripMenuItem.Click += new System.EventHandler(this.BubbleToolStripMenuItem_Click);
             // 
             // columnToolStripMenuItem
             // 
             this.columnToolStripMenuItem.Name = "columnToolStripMenuItem";
             this.columnToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.columnToolStripMenuItem.Text = "Column";
-            this.columnToolStripMenuItem.Click += new System.EventHandler(this.columnToolStripMenuItem_Click);
+            this.columnToolStripMenuItem.Click += new System.EventHandler(this.ColumnToolStripMenuItem_Click);
             // 
             // radarToolStripMenuItem
             // 
             this.radarToolStripMenuItem.Name = "radarToolStripMenuItem";
             this.radarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.radarToolStripMenuItem.Text = "Radar";
-            this.radarToolStripMenuItem.Click += new System.EventHandler(this.radarToolStripMenuItem_Click);
+            this.radarToolStripMenuItem.Click += new System.EventHandler(this.RadarToolStripMenuItem_Click);
             // 
             // rangeBarToolStripMenuItem
             // 
             this.rangeBarToolStripMenuItem.Name = "rangeBarToolStripMenuItem";
             this.rangeBarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.rangeBarToolStripMenuItem.Text = "RangeBar";
-            this.rangeBarToolStripMenuItem.Click += new System.EventHandler(this.rangeBarToolStripMenuItem_Click);
+            this.rangeBarToolStripMenuItem.Click += new System.EventHandler(this.RangeBarToolStripMenuItem_Click);
             // 
             // stepLineToolStripMenuItem
             // 
             this.stepLineToolStripMenuItem.Name = "stepLineToolStripMenuItem";
             this.stepLineToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.stepLineToolStripMenuItem.Text = "StepLine";
-            this.stepLineToolStripMenuItem.Click += new System.EventHandler(this.stepLineToolStripMenuItem_Click);
+            this.stepLineToolStripMenuItem.Click += new System.EventHandler(this.StepLineToolStripMenuItem_Click);
             // 
             // InfoNL
             // 
@@ -209,22 +216,6 @@
             this.InfoOprocentowanie.Size = new System.Drawing.Size(94, 13);
             this.InfoOprocentowanie.TabIndex = 4;
             this.InfoOprocentowanie.Text = "Stopa procentowa";
-            // 
-            // Oprocentowanie
-            // 
-            this.Oprocentowanie.FormattingEnabled = true;
-            this.Oprocentowanie.Items.AddRange(new object[] {
-            "0,02",
-            "0,03",
-            "0,04",
-            "0,05",
-            "0,06",
-            "0,07",
-            "0,08"});
-            this.Oprocentowanie.Location = new System.Drawing.Point(12, 103);
-            this.Oprocentowanie.Name = "Oprocentowanie";
-            this.Oprocentowanie.Size = new System.Drawing.Size(106, 21);
-            this.Oprocentowanie.TabIndex = 5;
             // 
             // InfoOkres
             // 
@@ -484,16 +475,16 @@
             // 
             // WykresLokata
             // 
-            chartArea1.Name = "ChartArea1";
-            this.WykresLokata.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.WykresLokata.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.WykresLokata.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.WykresLokata.Legends.Add(legend2);
             this.WykresLokata.Location = new System.Drawing.Point(152, 64);
             this.WykresLokata.Name = "WykresLokata";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.WykresLokata.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.WykresLokata.Series.Add(series2);
             this.WykresLokata.Size = new System.Drawing.Size(453, 386);
             this.WykresLokata.TabIndex = 28;
             this.WykresLokata.Text = "chart1";
@@ -524,11 +515,73 @@
             this.InfoSN.TabIndex = 30;
             this.InfoSN.Text = "1    2     3    4     5";
             // 
+            // Nud_Digit1
+            // 
+            this.Nud_Digit1.Location = new System.Drawing.Point(12, 103);
+            this.Nud_Digit1.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.Nud_Digit1.Name = "Nud_Digit1";
+            this.Nud_Digit1.Size = new System.Drawing.Size(28, 20);
+            this.Nud_Digit1.TabIndex = 31;
+            this.Nud_Digit1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Nud_Digit2
+            // 
+            this.Nud_Digit2.Location = new System.Drawing.Point(50, 103);
+            this.Nud_Digit2.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.Nud_Digit2.Name = "Nud_Digit2";
+            this.Nud_Digit2.Size = new System.Drawing.Size(28, 20);
+            this.Nud_Digit2.TabIndex = 32;
+            this.Nud_Digit2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Nud_Digit3
+            // 
+            this.Nud_Digit3.Location = new System.Drawing.Point(76, 103);
+            this.Nud_Digit3.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.Nud_Digit3.Name = "Nud_Digit3";
+            this.Nud_Digit3.Size = new System.Drawing.Size(28, 20);
+            this.Nud_Digit3.TabIndex = 33;
+            this.Nud_Digit3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Lb_Procent
+            // 
+            this.Lb_Procent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Lb_Procent.Location = new System.Drawing.Point(102, 103);
+            this.Lb_Procent.Name = "Lb_Procent";
+            this.Lb_Procent.Size = new System.Drawing.Size(15, 23);
+            this.Lb_Procent.TabIndex = 34;
+            this.Lb_Procent.Text = "%";
+            // 
+            // Lb_Separator
+            // 
+            this.Lb_Separator.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Lb_Separator.Location = new System.Drawing.Point(37, 97);
+            this.Lb_Separator.Name = "Lb_Separator";
+            this.Lb_Separator.Size = new System.Drawing.Size(11, 24);
+            this.Lb_Separator.TabIndex = 35;
+            this.Lb_Separator.Text = ",";
+            // 
             // Lokaty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 462);
+            this.Controls.Add(this.Lb_Separator);
+            this.Controls.Add(this.Lb_Procent);
+            this.Controls.Add(this.Nud_Digit3);
+            this.Controls.Add(this.Nud_Digit2);
+            this.Controls.Add(this.Nud_Digit1);
             this.Controls.Add(this.InfoSN);
             this.Controls.Add(this.InfoGrubośćLinii);
             this.Controls.Add(this.GrubośćLiniiWykresu);
@@ -553,7 +606,6 @@
             this.Controls.Add(this._WybierzKolorLiniiWykresu);
             this.Controls.Add(this.CzasNaliczaniaLokaty);
             this.Controls.Add(this.InfoOkres);
-            this.Controls.Add(this.Oprocentowanie);
             this.Controls.Add(this.InfoOprocentowanie);
             this.Controls.Add(this.KwotaLokaty);
             this.Controls.Add(this.InfoKwota);
@@ -563,6 +615,7 @@
             this.Name = "Lokaty";
             this.Text = "Lokata Kapitałowa";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Lokaty_FormClosing);
+            this.Load += new System.EventHandler(this.Lokaty_Load);
             this.MenuLokaty.ResumeLayout(false);
             this.MenuLokaty.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Obrazek)).EndInit();
@@ -570,6 +623,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.WykresLokata)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrubośćLiniiWykresu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_Digit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_Digit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nud_Digit3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -584,7 +640,6 @@
         private System.Windows.Forms.Label InfoKwota;
         private System.Windows.Forms.TextBox KwotaLokaty;
         private System.Windows.Forms.Label InfoOprocentowanie;
-        private System.Windows.Forms.ComboBox Oprocentowanie;
         private System.Windows.Forms.Label InfoOkres;
         private System.Windows.Forms.TextBox CzasNaliczaniaLokaty;
         private System.Windows.Forms.Button _WybierzKolorLiniiWykresu;
@@ -622,5 +677,10 @@
         private System.Windows.Forms.ToolStripMenuItem stepLineToolStripMenuItem;
         private System.Windows.Forms.TrackBar GrubośćLiniiWykresu;
         private System.Windows.Forms.Label InfoSN;
+        private System.Windows.Forms.NumericUpDown Nud_Digit3;
+        private System.Windows.Forms.NumericUpDown Nud_Digit2;
+        private System.Windows.Forms.NumericUpDown Nud_Digit1;
+        private System.Windows.Forms.Label Lb_Separator;
+        private System.Windows.Forms.Label Lb_Procent;
     }
 }
